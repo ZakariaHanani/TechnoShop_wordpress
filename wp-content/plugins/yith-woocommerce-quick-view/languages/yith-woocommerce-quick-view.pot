@@ -1,0 +1,229 @@
+# Copyright (C) 2024 YITH
+# This file is distributed under the same license as the YITH WooCommerce Quick View package.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Quick View 2.0.0\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/yith-woocommerce-quick-view\n"
+"POT-Creation-Date: 2024-11-19 08:43:02+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: includes/class.yith-wcqv-admin.php:138
+msgid "General settings"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:140
+msgid "Set the general behaviour of the plugin."
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:143
+msgid "Customization"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:145
+msgid "Configure style options for the quick view content."
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:218
+msgid "Use an icon and show the button when hovering over the product image"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:219
+msgid ""
+"Choose whether to show the product preview button when hovering over the "
+"product image and replace the text with the default icon or a custom icon."
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:222
+msgid "2 additional styles for Quick View: sliding panel and on-page preview"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:223
+msgid ""
+"The premium version includes two additional types of layouts for the "
+"product preview: the first opens the product tab directly on the page, in a "
+"pop-up section, and the second is a side panel that opens to the right of "
+"the browser window.   "
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:226
+msgid "Choose which product information to show in the Quick View"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:227
+msgid ""
+"We offer you maximum versatility when it comes to the information you want "
+"to show in the Quick View. You can choose to show the gallery or a slider "
+"with all the product images, the description (short or long, your choice), "
+"the rating, the price, the meta (categories, SKUs, etc.), the “Add to cart” "
+"button, a link to take the user to the details page (if they want to know "
+"more), and much more."
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:230
+msgid "Enable cross-product navigation"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:231
+msgid ""
+"With cross-product navigation, you can allow your customers to easily and "
+"instantly view the tabs of multiple products without having to close the "
+"Quick View window."
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:234
+msgid "Allow sharing product previews on social media"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:235
+msgid ""
+"Allow your customers to easily share product previews with the appropriate "
+"social icons. "
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:238
+msgid ""
+"Use the shortcode or block to insert a preview of a specific product "
+"anywhere in your store"
+msgstr ""
+
+#: includes/class.yith-wcqv-admin.php:239
+msgid ""
+"The Gutenberg shortcode and block included in the plugin allows you to "
+"insert the preview button for a specific product anywhere in your store: "
+"the perfect solution if you want to provide a quick overview of the product "
+"in a blog article, landing page, header, etc."
+msgstr ""
+
+#: init.php:51
+msgid ""
+"YITH WooCommerce Quick View is enabled but not effective. It requires "
+"WooCommerce in order to work."
+msgstr ""
+
+#: init.php:65
+msgid ""
+"You can't activate the free version of YITH WooCommerce Quick View while "
+"you are using the premium one."
+msgstr ""
+
+#: plugin-options/settings-options.php:17
+msgid "General Options"
+msgstr ""
+
+#: plugin-options/settings-options.php:25
+msgid "Enable Quick View on mobile"
+msgstr ""
+
+#: plugin-options/settings-options.php:26
+msgid "Enable quick view features for mobile devices."
+msgstr ""
+
+#: plugin-options/settings-options.php:34
+msgid "\"Quick view\" button label"
+msgstr ""
+
+#: plugin-options/settings-options.php:35
+msgid "\"Quick view\" button label in the WooCommerce loop."
+msgstr ""
+
+#: plugin-options/settings-options.php:38
+msgid "Quick View"
+msgstr ""
+
+#: plugin-options/settings-options.php:47
+msgid "Content Options"
+msgstr ""
+
+#: plugin-options/settings-options.php:55
+msgid "Product description:"
+msgstr ""
+
+#: plugin-options/settings-options.php:60
+msgid "Show short description"
+msgstr ""
+
+#: plugin-options/settings-options.php:61
+msgid "Show full description"
+msgstr ""
+
+#: plugin-options/settings-options.php:67
+msgid "Product image dimensions"
+msgstr ""
+
+#: plugin-options/settings-options.php:72
+msgid "Width"
+msgstr ""
+
+#: plugin-options/settings-options.php:73
+msgid "Height"
+msgstr ""
+
+#: plugin-options/style-options.php:17
+msgid "General Style"
+msgstr ""
+
+#: plugin-options/style-options.php:24
+msgid "Quick view"
+msgstr ""
+
+#: plugin-options/style-options.php:32
+msgid "Content background"
+msgstr ""
+
+#: plugin-options/style-options.php:37
+msgid "Overlay color"
+msgstr ""
+
+#: plugin-options/style-options.php:45
+msgid "Close icon"
+msgstr ""
+
+#: plugin-options/style-options.php:53
+msgid "Color"
+msgstr ""
+
+#: plugin-options/style-options.php:58
+msgid "Color hover"
+msgstr ""
+
+#: plugin-options/style-options.php:67
+msgid "Quick view button"
+msgstr ""
+
+#: plugin-options/style-options.php:73
+msgid "Background"
+msgstr ""
+
+#: plugin-options/style-options.php:78
+msgid "Background hover"
+msgstr ""
+
+#: plugin-options/style-options.php:83
+msgid "Text"
+msgstr ""
+
+#: plugin-options/style-options.php:88
+msgid "Text Hover"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The <code><strong>YITH WooCommerce Quick View</strong></code> plugin allows "
+"your customers to have a quick look about products. <a "
+"href=\"https://yithemes.com/\" target=\"_blank\">Get more plugins for your "
+"e-commerce shop on <strong>YITH</strong></a>."
+msgstr ""
+
+#: plugin-options/settings-options.php:68
+msgctxt "placeholders are html tags"
+msgid ""
+"Set the image size (in px). After changing these settings you may need to "
+"%sregenerate your thumbnails%s."
+msgstr ""

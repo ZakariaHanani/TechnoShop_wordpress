@@ -1,0 +1,108 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/th-advance-product-search/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+.wp-block .thaps-search-box {
+  width: 550px;
+  margin: 0;
+}
+
+.thaps-search-box .th-icon {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.wp-block-th-advance-product-search {
+  --tapsp-searchBtnBgClr: #111;
+  --tapsp-searchBtnTextClr: #fff;
+  --tapsp-searchBtnHvrTextClr: #fff;
+  --tapsp-searchBtnHvrBgClr: #111;
+  --tapsp-searchBrdrClr: #e7f5ff;
+  --tapsp-searchTextClr: var(--tapsp-searchTextClr);
+  --tapsp-searchBarClr: var( --tapsp-searchBarClr);
+  --taiowcp-searchWidth:550px;
+  --taiowcp-searchWidthTablet:550px;
+  --taiowcp-searchWidthMobile:550px;
+  --taiowcp-barborderRadius:4px;
+  --taiowcp-barborderRadiusTablet:4px;
+  --taiowcp-barborderRadiusMobile:4px;
+  --tapsp-searchborderClr:#e7f5ff;
+}
+
+.wp-block-th-advance-product-search .thaps-search-box {
+  max-width: var(--taiowcp-searchWidth);
+  width: var(--taiowcp-searchWidth);
+}
+.wp-block-th-advance-product-search #thaps-search-button {
+  background: var(--tapsp-searchBtnBgClr);
+  color: var(--tapsp-searchBtnTextClr);
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--taiowcp-barborderRadius);
+  cursor: pointer;
+}
+.wp-block-th-advance-product-search #thaps-search-button:hover {
+  background: var(--tapsp-searchBtnHvrBgClr);
+  color: var(--tapsp-searchBtnHvrTextClr);
+}
+.wp-block-th-advance-product-search .thaps-from-wrap {
+  background: var(--tapsp-searchBarClr);
+  border-color: var(--tapsp-searchborderClr);
+}
+.wp-block-th-advance-product-search .thaps-search-autocomplete {
+  background-color: transparent;
+}
+.wp-block-th-advance-product-search .thaps-search-autocomplete::-moz-placeholder {
+  color: var(--tapsp-searchTextClr);
+}
+.wp-block-th-advance-product-search .thaps-search-autocomplete,
+.wp-block-th-advance-product-search .thaps-search-autocomplete::placeholder {
+  color: var(--tapsp-searchTextClr);
+}
+.wp-block-th-advance-product-search .thaps-search-autocomplete:focus {
+  box-shadow: none;
+  outline: none;
+}
+.wp-block-th-advance-product-search .thaps-search-box .icon-style, .wp-block-th-advance-product-search .thaps-search-box .click-icon {
+  color: var(--tapsp-searchIconClr);
+}
+.wp-block-th-advance-product-search .thaps-box-open .tapsp-icon-arrow {
+  border-left-color: var(--tapsp-searchBarColor);
+  border-top-color: var(--tapsp-searchBarColor);
+  background: var(--tapsp-searchBarClr);
+}
+.wp-block-th-advance-product-search .icon_style .tapsp-search-form {
+  min-width: 320px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .wp-block-th-advance-product-search {
+    --taiowcp-searchWidthTablet:550px;
+    --taiowcp-barborderRadiusTablet:4px;
+  }
+  .wp-block-th-advance-product-search .thaps-search-box {
+    max-width: var(--taiowcp-searchWidthTablet);
+    width: var(--taiowcp-searchWidthTablet);
+  }
+  .wp-block-th-advance-product-search #thaps-search-button {
+    border-radius: var(--taiowcp-barborderRadiusTablet);
+  }
+  .wp-block-th-advance-product-search .thaps-from-wrap {
+    border-radius: var(--taiowcp-barborderRadiusTablet);
+  }
+}
+@media screen and (max-width: 767px) {
+  .wp-block-th-advance-product-search {
+    --taiowcp-searchWidthMobile:550px;
+    --taiowcp-barborderRadiusMobile:4px;
+  }
+  .wp-block-th-advance-product-search .thaps-search-box {
+    max-width: var(--taiowcp-searchWidthMobile);
+    width: var(--taiowcp-searchWidthMobile);
+  }
+  .wp-block-th-advance-product-search #thaps-search-button {
+    border-radius: var(--taiowcp-barborderRadiusMobile);
+  }
+  .wp-block-th-advance-product-search .thaps-from-wrap {
+    border-radius: var(--taiowcp-barborderRadiusMobile);
+  }
+}
+
+/*# sourceMappingURL=style-th-advance-product-search.css.map*/

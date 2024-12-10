@@ -1,0 +1,107 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "th-advance-product-search/th-advance-product-search",
+  "version": "0.1.0",
+  "title": "Advance Product Search",
+  "category": "th-advance-product-search",
+  "description": "",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "th-advance-product-search",
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "uniqueID": {
+      "type": "string"
+    },
+    "searchStyle": {
+      "type": "string",
+      "default": "default"
+    },
+    "searchWidth": {
+      "type": "number"
+    },
+    "searchWidthTablet": {
+      "type": "number"
+    },
+    "searchWidthMobile": {
+      "type": "number"
+    },
+    "searchWidthUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "searchWidthUnitTablet": {
+      "type": "string",
+      "default": "px"
+    },
+    "searchWidthUnitMobile": {
+      "type": "string",
+      "default": "px"
+    },
+    "disableSubmit": {
+      "type": "boolean",
+      "default": true
+    },
+    "submitText": {
+      "type": "string",
+      "default": "Submit"
+    },
+    "custPostType": {
+      "type": "string"
+    },
+    "placeholderText": {
+      "type": "string",
+      "default": "search..."
+    },
+    "searchBarClr": {
+      "type": "string"
+    },
+    "searchTextClr": {
+      "type": "string"
+    },
+    "searchBrdrClr": {
+      "type": "string"
+    },
+    "searchBtnHvrBgClr": {
+      "type": "string",
+      "default": "#111"
+    },
+    "searchBtnHvrTextClr": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "searchBtnTextClr": {
+      "type": "string",
+      "default": "#fff"
+    },
+    "searchBtnBgClr": {
+      "type": "string",
+      "default": "#111"
+    },
+    "searchIconClr": {
+      "type": "string",
+      "default": ""
+    },
+    "barborderRadius": {
+      "type": "number"
+    },
+    "barborderRadiusTablet": {
+      "type": "number"
+    },
+    "barborderRadiusMobile": {
+      "type": "number"
+    },
+    "barborderRadiusUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "searchborder": {
+      "type": "string",
+      "default": "#e7f5ff"
+    }
+  }
+}

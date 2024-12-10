@@ -1,0 +1,264 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "taiowc/taiowc",
+  "version": "0.1.0",
+  "title": "All In One Woo Cart",
+  "category": "taiowc",
+  "description": "",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "taiowc",
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "uniqueID": {
+      "type": "string"
+    },
+    "cartStyle": {
+      "type": "string",
+      "default": "[taiowc]"
+    },
+    "cartPrice": {
+      "type": "boolean",
+      "default": true
+    },
+    "cartCount": {
+      "type": "boolean",
+      "default": true
+    },
+    "countPosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "marginType": {
+      "type": "string",
+      "default": "linked"
+    },
+    "marginTypeTablet": {
+      "type": "string",
+      "default": "linked"
+    },
+    "marginTypeMobile": {
+      "type": "string",
+      "default": "linked"
+    },
+    "margin": {
+      "type": "number",
+      "default": 0
+    },
+    "marginUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "marginTablet": {
+      "type": "number"
+    },
+    "marginMobile": {
+      "type": "number"
+    },
+    "marginTop": {
+      "type": "number",
+      "default": 0
+    },
+    "marginTopTablet": {
+      "type": "number"
+    },
+    "marginTopMobile": {
+      "type": "number"
+    },
+    "marginBottom": {
+      "type": "number",
+      "default": 0
+    },
+    "marginBottomTablet": {
+      "type": "number"
+    },
+    "marginBottomMobile": {
+      "type": "number"
+    },
+    "marginRight": {
+      "type": "number",
+      "default": 0
+    },
+    "marginRightTablet": {
+      "type": "number"
+    },
+    "marginRightMobile": {
+      "type": "number"
+    },
+    "marginLeft": {
+      "type": "number",
+      "default": 0
+    },
+    "marginLeftTablet": {
+      "type": "number"
+    },
+    "marginLeftMobile": {
+      "type": "number"
+    },
+    "paddingType": {
+      "type": "string",
+      "default": "linked"
+    },
+    "paddingTypeTablet": {
+      "type": "string",
+      "default": "linked"
+    },
+    "paddingTypeMobile": {
+      "type": "string",
+      "default": "linked"
+    },
+    "padding": {
+      "type": "number"
+    },
+    "paddingUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "paddingTablet": {
+      "type": "number"
+    },
+    "paddingMobile": {
+      "type": "number"
+    },
+    "paddingTop": {
+      "type": "number",
+      "default": 0
+    },
+    "paddingTopTablet": {
+      "type": "number"
+    },
+    "paddingTopMobile": {
+      "type": "number"
+    },
+    "paddingRight": {
+      "type": "number",
+      "default": 0
+    },
+    "paddingRightTablet": {
+      "type": "number"
+    },
+    "paddingRightMobile": {
+      "type": "number"
+    },
+    "paddingBottom": {
+      "type": "number",
+      "default": 0
+    },
+    "paddingBottomTablet": {
+      "type": "number"
+    },
+    "paddingBottomMobile": {
+      "type": "number"
+    },
+    "paddingLeft": {
+      "type": "number",
+      "default": 0
+    },
+    "paddingLeftTablet": {
+      "type": "number"
+    },
+    "paddingLeftMobile": {
+      "type": "number"
+    },
+    "bgSet": {
+      "type": "boolean",
+      "default": false
+    },
+    "cartBgClr": {
+      "type": "string"
+    },
+    "iconSet": {
+      "type": "boolean",
+      "default": false
+    },
+    "iconClr": {
+      "type": "string"
+    },
+    "priceSet": {
+      "type": "boolean",
+      "default": false
+    },
+    "priceClr": {
+      "type": "string"
+    },
+    "countSet": {
+      "type": "boolean",
+      "default": false
+    },
+    "countClr": {
+      "type": "string"
+    },
+    "countBgClr": {
+      "type": "string"
+    },
+    "iconfontSize": {
+      "type": "number"
+    },
+    "iconfontSizeTablet": {
+      "type": "number"
+    },
+    "iconfontSizeMobile": {
+      "type": "number"
+    },
+    "iconfontSizeUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "pricefontSize": {
+      "type": "number"
+    },
+    "pricefontSizeTablet": {
+      "type": "number"
+    },
+    "pricefontSizeMobile": {
+      "type": "number"
+    },
+    "pricefontSizeUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "countSize": {
+      "type": "number"
+    },
+    "countSizeTablet": {
+      "type": "number"
+    },
+    "countSizeMobile": {
+      "type": "number"
+    },
+    "countSizeUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "countFontSize": {
+      "type": "number"
+    },
+    "countFontSizeTablet": {
+      "type": "number"
+    },
+    "countFontSizeMobile": {
+      "type": "number"
+    },
+    "countFontSizeUnit": {
+      "type": "string",
+      "default": "px"
+    },
+    "borderRadius": {
+      "type": "number"
+    },
+    "borderRadiusTablet": {
+      "type": "number"
+    },
+    "borderRadiusMobile": {
+      "type": "number"
+    },
+    "borderRadiusUnit": {
+      "type": "string",
+      "default": "px"
+    }
+  }
+}

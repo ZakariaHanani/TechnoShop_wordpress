@@ -1,0 +1,85 @@
+.getting-started {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  -webkit-flex-wrap: wrap; 
+  -moz-flex-wrap: wrap; 
+  -ms-flex-wrap: wrap; 
+  -o-flex-wrap: wrap; 
+  flex-wrap: wrap; 
+}
+
+.getting-started .getting-img {
+  	box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcde;
+}
+
+.getting-started .getting-img img {
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.getting-content {
+	padding: 20px 20px 20px 0;
+}
+
+.getting-content h2 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.getting-content h3 {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.getting-content .button-primary  {
+	margin-right: 15px;
+}
+
+/*button css*/
+.wp-core-ui .feature-section .button-group.button-hero .button, 
+.wp-core-ui .feature-section .button.button-hero,
+.wp-core-ui .feature-section .button, 
+.wp-core-ui .feature-section .button-primary, 
+.wp-core-ui .feature-section .button-secondary {
+  line-height: 1.2;
+  min-height: inherit;
+  padding: 10px 35px;
+  white-space: normal;
+}
+@media only screen and (min-width: 768px) {
+	.getting-started.updated.notice  {
+		padding-left: 20px;
+	}
+	.getting-started .getting-img {
+	  	width: 270px;
+	  	margin: 20px 0;
+	}
+	.getting-content {
+		width: calc(100% - 312px);
+		padding: 20px;
+	}
+	.getting-content h2 {
+		font-size: 24px;
+	}
+	.getting-content h3 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.wp-core-ui .notice.is-dismissible.getting-started {
+		padding-top: 30px;
+	}
+	.getting-content h2 {
+		font-size: 16px;
+	}
+	.getting-content h3 {
+		font-size: 13px;
+	}
+}

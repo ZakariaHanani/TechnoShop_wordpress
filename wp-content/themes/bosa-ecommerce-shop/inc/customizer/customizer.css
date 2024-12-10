@@ -1,0 +1,18 @@
+#customize-control-featured_pages_section_layouts {
+    display: none !important;
+}
+
+#customize-control-grid_thumbnail_separator label
+{
+    font-weight: 600;
+    display: block;
+}
+#customize-control-grid_thumbnail_separator label
+{
+    background-color: #2271B1;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

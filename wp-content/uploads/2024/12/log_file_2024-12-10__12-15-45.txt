@@ -1,0 +1,60 @@
+
+---Downloaded files---
+The import files for: Big Store Electro were successfully downloaded!
+Initial max execution time = 120
+Files info:
+Site URL = http://localhost/wordpress
+Data file = C:\xampp\htdocs\wordpress/wp-content/uploads/2024/12/demo-content-import-file_2024-12-10__12-15-45.xml
+Widget file = C:\xampp\htdocs\wordpress/wp-content/uploads/2024/12/demo-widgets-import-file_2024-12-10__12-15-45.json
+Customizer file = C:\xampp\htdocs\wordpress/wp-content/uploads/2024/12/demo-customizer-import-file_2024-12-10__12-15-45.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Primary Sidebar : 
+
+Image - No Title - Imported
+Liste des produits - Popular - Imported
+Nuage d’étiquettes - Tag Clouds - Imported
+
+Footer Below Second Widget : 
+
+Image - No Title - Imported
+
+Footer Widget Area 1 : 
+
+Texte - Connect With Us - Imported
+Texte - Useful Links - Imported
+
+Footer Widget Area 2 : 
+
+Texte - More About Store - Imported
+Menu de navigation - End Points - Imported
+
+Footer Widget Area 3 : 
+
+Liste des produits - Products - Imported
+
+Footer Widget Area 4 : 
+
+HTML personnalisé - Contact Details - Imported
+Texte - Offline Stores - Imported
+
+WooCommerce Sidebar : 
+
+Filtrer les produits par prix - Filter by Price - Imported
+Catégories de produit - Product categories - Imported
+Liste des produits - Products - Imported
+Filtrer les produits par note obtenue - Average Rating - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

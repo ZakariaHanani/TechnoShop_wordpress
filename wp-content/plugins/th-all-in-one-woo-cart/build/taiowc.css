@@ -1,0 +1,106 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/taiowc/editor.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-taiowc-taiowc {
+  display: inline-block;
+}
+
+.th-minicart {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.th-minicart-icon span.th-icon {
+  font-size: 32px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.th-minicart-amt span {
+  font-size: 14px;
+}
+
+.th-minicart-icon {
+  display: inline-flex;
+}
+
+.th-minicart {
+  position: relative;
+}
+
+.th-minicart {
+  position: relative;
+}
+
+.th-minicart-count {
+  position: absolute;
+  background: #111;
+  height: 25px;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  top: -15px;
+  left: -5px;
+}
+
+.th-minicart-count.count-right {
+  right: -5px;
+  left: auto;
+}
+
+.wp-block-taiowc-taiowc {
+  --taiowc-padding-top:0.5rem;
+  --taiowc-padding-bottom:0.5rem;
+  --taiowc-padding-right:0.5rem;
+  --taiowc-padding-left:0.5rem;
+  --taiowc-iconClr:#111;
+  --taiowc-priceClr:#111;
+  --taiowc-countClr:#fff;
+  --taiowc-countBgClr:#111;
+  --taiowc-icon-font-size:32px;
+  --taiowc-price-font-size:14px;
+  --taiowc-count-size:25px;
+  --taiowc-count-font-size:12px;
+  --taiowc-brd-radius:3px;
+}
+
+.wp-block-taiowc-taiowc .th-minicart {
+  padding-top: var(--taiowc-padding-top);
+  padding-bottom: var(--taiowc-padding-bottom);
+  padding-right: var(--taiowc-padding-right);
+  padding-left: var(--taiowc-padding-left);
+  margin-top: var(--taiowc-margin-top);
+  margin-bottom: var(--taiowc-margin-bottom);
+  margin-right: var(--taiowc-margin-right);
+  margin-left: var(--taiowc-margin-left);
+  background: var(--taiowc-cartBgClr);
+  border-radius: var(--taiowc-brd-radius);
+}
+
+.wp-block-taiowc-taiowc .th-minicart-icon span.th-icon {
+  color: var(--taiowc-iconClr);
+  font-size: var(--taiowc-icon-font-size);
+}
+
+.wp-block-taiowc-taiowc .th-minicart-amt span {
+  color: var(--taiowc-priceClr);
+  font-size: var(--taiowc-price-font-size);
+}
+
+.wp-block-taiowc-taiowc .th-minicart-count {
+  background: var(--taiowc-countBgClr);
+  color: var(--taiowc-countClr);
+  height: var(--taiowc-count-size);
+  width: var(--taiowc-count-size);
+  line-height: var(--taiowc-count-size);
+}
+
+.wp-block-taiowc-taiowc .th-minicart-count span {
+  font-size: var(--taiowc-count-font-size);
+}
+
+/*# sourceMappingURL=taiowc.css.map*/

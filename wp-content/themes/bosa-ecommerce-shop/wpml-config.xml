@@ -1,0 +1,10 @@
+<wpml-config>
+    <admin-texts>
+        <key name="theme_mods_bosa-ecommerce-shop">
+            <key name="featured_pages_section_title" />
+            <key name="featured_pages_section_description" />
+            <key name="feature_posts_two_section_title" />
+            <key name="feature_posts_two_section_description" />
+        </key>
+    </admin-texts>
+</wpml-config>

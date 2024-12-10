@@ -1,0 +1,937 @@
+# Translation of Plugins - YITH WooCommerce Quick View - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - YITH WooCommerce Quick View - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-07 06:48:14+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - YITH WooCommerce Quick View - Stable (latest release)\n"
+
+#: plugin-fw/templates/panel/premium-tab-content.php:102
+msgctxt "Premium Tab"
+msgid "Get the premium version"
+msgstr "Obtenez l’extension Premium"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:977
+msgctxt "Premium tab name"
+msgid "Get premium"
+msgstr "Obtenir la version premium"
+
+#. Translators: %s: Codex link.
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:19
+msgid "WordPress requirements"
+msgstr "Prérequis de WordPress"
+
+#. Translators: %s: Codex link.
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:19
+msgid "WordPress recommends a minimum MySQL version of 5.6. See: %s"
+msgstr "WordPress recommande au minimum la version 5.6 de MySQL. Voir: %s"
+
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:28
+msgid "MySQL version"
+msgstr "Version de MySQL "
+
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:24
+msgid "Database Info"
+msgstr "Informations sur la base de données"
+
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:46
+msgid "Database Free Size"
+msgstr "Taille disponible en base de donnée"
+
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:42
+msgid "Database Index Size"
+msgstr "Taille Index Base de Données"
+
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:38
+msgid "Database Data Size"
+msgstr "Taille de la base de données"
+
+#: plugin-fw/templates/sysinfo/tabs/db-info.php:34
+msgid "Total Database Size"
+msgstr "Taille totale de la base de données"
+
+#. translators: %s is the name of the plugin that is loading the framework.
+#: plugin-fw/templates/sysinfo/tabs/main.php:66
+msgid "loaded by %s"
+msgstr "Chargé par %s"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:61
+msgid "YITH Plugin Framework Version"
+msgstr "Version du Framework de l’extension YITH"
+
+#: plugin-fw/templates/panel/help-tab.php:193
+msgctxt "Help tab submit ticket title"
+msgid "Need help?"
+msgstr "Besoin d'aide?"
+
+#: plugin-fw/templates/panel/help-tab.php:184
+msgctxt "Help tab FAQ link"
+msgid "View all FAQs >"
+msgstr "Voir tous les FAQ >"
+
+#: plugin-fw/templates/panel/help-tab.php:204
+msgctxt "Help tab submit ticket button"
+msgid "Submit a ticket"
+msgstr "Envoyer un ticket"
+
+#: plugin-fw/templates/panel/help-tab.php:152
+msgctxt "Help tab view FAQs link"
+msgid "Check the FAQs"
+msgstr "Vérifier la FAQ"
+
+#: plugin-fw/templates/panel/help-tab.php:126
+msgctxt "Help tab Read Documentation link"
+msgid "Read the documentation"
+msgstr "Lire la documentation"
+
+#: plugin-fw/templates/panel/help-tab.php:96
+msgctxt "Help tab Watch Videotutorials link"
+msgid "Videos are also available in:"
+msgstr "Les vidéos sont aussi disponibles en :"
+
+#. translators: 1. Url to EN playlist.
+#: plugin-fw/templates/panel/help-tab.php:89
+msgctxt "Help tab view all video link"
+msgid "Check the full <a href=\"%s\" target=\"_blank\">Playlist on Youtube</a> to learn more >"
+msgstr "Consultez <a href=\"%s\" target=\"_blank\">la liste de lecture complète sur Youtube</a> pour en apprendre davantage >"
+
+#: plugin-fw/templates/fields/image-dimensions.php:23
+msgctxt "Image height field label"
+msgid "Height"
+msgstr "Taille"
+
+#: plugin-fw/templates/fields/image-dimensions.php:18
+msgctxt "Image width field label"
+msgid "Width"
+msgstr "Largeur "
+
+#. translators: 1. Plugin name.
+#: plugin-fw/includes/class-yit-plugin-panel.php:920
+msgctxt "Help tab default title"
+msgid "Thank you for purchasing %s!"
+msgstr "Merci d’acheter %s !"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1007
+msgctxt "Help tab name"
+msgid "Help"
+msgstr "Aide"
+
+#: plugin-fw/includes/class-yit-help-desk.php:148
+msgid "There was an error with your request; please try again later."
+msgstr "Une erreur est survenue lors de votre demande. Veuillez réessayer ultérieurement."
+
+#: plugin-fw/includes/class-yit-assets.php:238 plugin-fw/yit-functions.php:1996
+msgctxt "Trash confirmation action"
+msgid "Yes, move to trash"
+msgstr "Oui, mettre à la corbeille"
+
+#: plugin-fw/includes/class-yit-assets.php:237
+msgid "Are you sure you want to trash the selected items?"
+msgstr "Confirmez-vous vouloir mettre à la corbeille les éléments sélectionnés ?"
+
+#: plugin-fw/includes/class-yit-assets.php:241
+msgid "Are you sure you want to delete the selected items?"
+msgstr "Confirmez-vous vouloir supprimer les éléments sélectionnés ?"
+
+#: plugin-fw/yit-functions.php:1967
+msgctxt "Post action"
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+#: plugin-fw/yit-functions.php:1959
+msgctxt "Post action"
+msgid "Edit"
+msgstr "Modifier"
+
+#: plugin-fw/yit-functions.php:1948
+msgctxt "Post action"
+msgid "View"
+msgstr "Voir"
+
+#: plugin-fw/yit-functions.php:1939
+msgctxt "Post action"
+msgid "Preview"
+msgstr "Aperçu"
+
+#. translators: %s is the name of the post type (example Back to "Membership
+#. Plans").
+#: plugin-fw/includes/class-yith-post-type-admin.php:294
+msgid "Back to the list"
+msgstr "Retour à la liste"
+
+#. translators: %s is the name of the post type (example Back to "Membership
+#. Plans").
+#: plugin-fw/includes/class-yith-post-type-admin.php:294
+msgid "Back to \"%s\""
+msgstr "Retour à « %s »"
+
+#: plugin-fw/includes/class-yit-assets.php:225
+msgctxt "Button text"
+msgid "Cancel"
+msgstr "Annuler"
+
+#: plugin-fw/includes/class-yit-assets.php:224
+msgctxt "Button text"
+msgid "Confirm"
+msgstr "Confirmez"
+
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:31
+msgid "Options Saved"
+msgstr "Options enregistrées"
+
+#: plugin-fw/templates/panel/v2/panel-content-page.php:57
+#: plugin-fw/templates/panel/v2/woocommerce/woocommerce-form.php:69
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:27
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:31
+msgid "Save Options"
+msgstr "Enregistrer les Options"
+
+#: plugin-fw/yit-functions.php:2131
+msgctxt "Term action"
+msgid "Delete"
+msgstr "Supprimer"
+
+#: plugin-fw/yit-functions.php:2118
+msgctxt "Term action"
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+#: plugin-fw/yit-functions.php:2110
+msgctxt "Term action"
+msgid "Edit"
+msgstr "Modifier"
+
+#: plugin-fw/yit-functions.php:2100
+msgctxt "Term action"
+msgid "View"
+msgstr "Afficher"
+
+#: plugin-fw/yit-functions.php:2025 plugin-fw/yit-functions.php:2033
+#: plugin-fw/yit-functions.php:2149
+msgid "Further actions"
+msgstr "Actions supplémentaires"
+
+#: plugin-fw/includes/class-yit-assets.php:242 plugin-fw/yit-functions.php:2014
+#: plugin-fw/yit-functions.php:2140
+msgctxt "Delete confirmation action"
+msgid "Yes, delete"
+msgstr "Oui, supprimer"
+
+#: plugin-fw/includes/class-yit-assets.php:240 plugin-fw/yit-functions.php:2011
+#: plugin-fw/yit-functions.php:2138
+msgid "Confirm delete"
+msgstr "Confirmer la suppression"
+
+#: plugin-fw/yit-functions.php:2004
+msgctxt "Post action"
+msgid "Delete Permanently"
+msgstr "Supprimer définitivement"
+
+#: plugin-fw/includes/class-yit-assets.php:236 plugin-fw/yit-functions.php:1993
+msgid "Confirm trash"
+msgstr "Confirmer la mise à la corbeille"
+
+#: plugin-fw/yit-functions.php:1987
+msgctxt "Post action"
+msgid "Trash"
+msgstr "Corbeille"
+
+#: plugin-fw/yit-functions.php:1979
+msgctxt "Post action"
+msgid "Restore"
+msgstr "Restaurer"
+
+#. translators: %s is the title of the post object.
+#: plugin-fw/includes/class-yit-assets.php:241 plugin-fw/yit-functions.php:1927
+#: plugin-fw/yit-functions.php:2086
+msgid "This action cannot be undone and you will not be able to recover this data."
+msgstr "Cette action est irréversible et vous ne pourrez pas récupérer ces données."
+
+#. translators: %s is the title of the post object.
+#: plugin-fw/yit-functions.php:1925
+msgid "Are you sure you want to move \"%s\" to trash?"
+msgstr "Voulez-vous vraiment déplacer « %s » dans la corbeille ?"
+
+#. translators: %s is the title of the post object.
+#: plugin-fw/yit-functions.php:1927 plugin-fw/yit-functions.php:2086
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr "Voulez-vous vraiment supprimer \"%s\" ?"
+
+#: plugin-fw/templates/panel/panel-header.php:26
+#: plugin-fw/templates/panel/v2/panel-header.php:21
+msgid "help us by leaving a good review"
+msgstr "aidez nous en laissant un avis positif"
+
+#: plugin-fw/templates/fields/copy-to-clipboard.php:45
+msgctxt "Copy-to-clipboard button text"
+msgid "Copy"
+msgstr "Copier"
+
+#: plugin-fw/templates/fields/copy-to-clipboard.php:41
+msgctxt "Copy-to-clipboard message"
+msgid "Copied!"
+msgstr "Copié !"
+
+#. translators: %s it the Elementor Widget title.
+#: plugin-fw/includes/builders/elementor/class-yith-elementor-widget.php:252
+msgctxt "Elementor Widget - section title"
+msgid "%s - Options"
+msgstr "%s - Options"
+
+#: plugin-fw/templates/fields/date-format.php:70
+msgid "Preview:"
+msgstr "Aperçu :"
+
+#: plugin-fw/includes/class-yit-pointers.php:97
+msgid "From now on, you can find the option panel of YITH plugins in YITH menu. Every time one of our plugins is added, a new entry will be added to this menu. For example, after the update, plugin options (such as for YITH WooCommerce Wishlist, YITH WooCommerce Ajax Search, etc.) will be moved from previous location to YITH menu."
+msgstr "À partir de maintenant, vous pouvez trouver le panneau d’options des extensions YITH dans le menu YITH Plugins. Chaque fois qu’une de nos extensions est ajoutée, une nouvelle entrée sera ajoutée à ce menu. Par exemple, après la mise à jour, les options des extensions (telles que YITH WooCommerce Wishlist, YITH WooCommerce Ajax Search, etc.) seront déplacées de l’emplacement précédent vers l’onglet YITH Plugins."
+
+#. translators: 1. YITH site link; 2. WordPress site link.
+#: plugin-fw/includes/class-yit-pointers.php:84
+#: plugin-fw/includes/class-yit-pointers.php:100
+msgid "Discover all our plugins available on: %1$s and %2$s"
+msgstr "Découvrez toutes nos extensions disponibles sur : %1$s et %2$s"
+
+#: plugin-fw/includes/class-yit-pointers.php:81
+msgid "From now on, you can find all plugin options in YITH menu. Plugin customization settings will be available as a new entry in YITH menu."
+msgstr "À partir de maintenant, vous pouvez trouver toutes les options de l’extension dans le menu extensions YITH. Les paramètres de personnalisation de l’extension seront disponibles en tant que nouvelle entrée dans le menu extensions YITH."
+
+#: plugin-fw/includes/class-yith-system-status.php:191
+msgid "PHPInfo"
+msgstr "PHPInfo"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:72
+msgid "Plugins Requirements"
+msgstr "Prérequis des Plugins"
+
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:48
+msgid "Download"
+msgstr "Télécharger"
+
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:95
+msgid "Copied!"
+msgstr "Copié!"
+
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:95
+msgid "Copy Code"
+msgstr "Copier le Code"
+
+#. translators: %s file name.
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:86
+msgid "No Log file available. Enable the WordPress debug by adding this in the %s file of your installation"
+msgstr "Aucun fichier journal disponible. Activez le débogage WordPress en ajoutant ceci dans le fichier %s de votre installation"
+
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:59
+msgid "The file size exceeds 8 megabytes so it must be downloaded"
+msgstr "La taille du fichier dépasse 8 mégaoctets, il doit donc être téléchargé"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:41
+msgid "Site Info"
+msgstr "Info du site"
+
+#: plugin-fw/includes/class-yith-system-status.php:199
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:108
+msgid "Log Files"
+msgstr "Fichiers journaux"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:57
+msgid "External object cache"
+msgstr "Cache d’objet externe"
+
+#: plugin-fw/includes/class-yit-assets.php:239
+#: plugin-fw/includes/class-yit-assets.php:243
+#: plugin-fw/templates/sysinfo/tabs/main.php:54
+#: plugin-fw/templates/sysinfo/tabs/main.php:58
+#: plugin-fw/yit-functions.php:1995 plugin-fw/yit-functions.php:2013
+msgid "No"
+msgstr "Non"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:54
+#: plugin-fw/templates/sysinfo/tabs/main.php:58
+msgid "Yes"
+msgstr "Oui"
+
+#: plugin-fw/includes/class-yit-assets.php:277
+msgid "Select Color"
+msgstr "Sélectionner couleur"
+
+#: plugin-fw/includes/class-yit-assets.php:275
+msgid "Default"
+msgstr "Par défaut"
+
+#: plugin-fw/includes/class-yit-assets.php:273
+msgid "Clear"
+msgstr "Effacer"
+
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:13
+msgid "WP debug.log file"
+msgstr "Fichier WP debug.log"
+
+#: plugin-fw/templates/sysinfo/tabs/error-log.php:18
+msgid "PHP error_log file"
+msgstr "Fichier PHP error_log"
+
+#: plugin-fw/includes/class-yit-assets.php:278
+msgid "Color value"
+msgstr "Référence couleur"
+
+#: plugin-fw/includes/class-yit-assets.php:274
+msgid "Clear color"
+msgstr "Effacer la couleur"
+
+#: plugin-fw/includes/class-yith-system-status.php:563
+msgid "Contact your hosting company in order to install it."
+msgstr "Contacter l’hébergeur pour l’installer."
+
+#. translators: %1$s TLS label
+#: plugin-fw/includes/class-yith-system-status.php:624
+msgid "The system check cannot determine which %1$s version is installed due to a connection issue between your site and our server."
+msgstr "La vérification du système ne peut pas déterminer quelle version de %1$s est installée en raison d’un problème de connexion entre votre site et notre serveur."
+
+#. translators: %1$s TLS label, %2$s cURL label
+#: plugin-fw/includes/class-yith-system-status.php:621
+msgid "The system check cannot determine which %1$s version is installed because %2$s module is disabled. Ask your hosting company to enable it."
+msgstr "Le système ne peut pas déterminer quelle version %1$s est installée puisque le module %2$s est désactivé. Demandez à votre hébergeur de l’activer."
+
+#: plugin-fw/includes/class-yit-assets.php:276
+msgid "Select default color"
+msgstr "Sélectionner la couleur par défaut"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:53
+msgid "Defined WP_CACHE"
+msgstr "WP_CACHE Défini"
+
+#: plugin-fw/templates/fields/dimensions.php:94
+msgctxt "Tooltip in the \"Dimensions\" field"
+msgid "Link values together"
+msgstr "Lier les valeurs ensemble"
+
+#: plugin-fw/templates/fields/dimensions.php:13
+msgctxt "Position in the \"Dimensions\" field"
+msgid "Top"
+msgstr "En haut"
+
+#: plugin-fw/templates/fields/dimensions.php:14
+msgctxt "Position in the \"Dimensions\" field"
+msgid "Right"
+msgstr "À droite"
+
+#: plugin-fw/templates/fields/dimensions.php:15
+msgctxt "Position in the \"Dimensions\" field"
+msgid "Bottom"
+msgstr "En bas"
+
+#: plugin-fw/templates/fields/dimensions.php:16
+msgctxt "Position in the \"Dimensions\" field"
+msgid "Left"
+msgstr "À gauche"
+
+#: plugin-fw/templates/panel/panel-header.php:23
+#: plugin-fw/templates/panel/v2/panel-header.php:18
+msgid "We need your support"
+msgstr "Nous avons besoin de votre soutien"
+
+#: plugin-fw/templates/panel/panel-header.php:24
+#: plugin-fw/templates/panel/v2/panel-header.php:19
+msgid "to keep updating and improving the plugin. Please,"
+msgstr "Pour continuer de mettre à jour et d’améliorer l’extension. S’il-vous-plaît,"
+
+#: plugin-fw/templates/panel/panel-header.php:27
+#: plugin-fw/templates/panel/v2/panel-header.php:22
+msgid ":) Thanks!"
+msgstr ":) Merci !"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:45
+msgid "Site URL"
+msgstr "URL du site"
+
+#: plugin-fw/templates/sysinfo/tabs/main.php:49
+msgid "Output IP Address"
+msgstr "Adresse IP de sortie"
+
+#: plugin-fw/includes/class-yith-system-status.php:144
+msgid "Iconv Module"
+msgstr "Icône du module"
+
+#: plugin-fw/includes/class-yith-system-status.php:522
+msgid "N/A"
+msgstr "N/D"
+
+#: plugin-fw/includes/class-yith-system-status.php:225
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: plugin-fw/includes/class-yith-system-status.php:146
+msgid "URL FOpen"
+msgstr "URL FOpen"
+
+#: plugin-fw/includes/class-yith-system-status.php:143
+msgid "GD Library"
+msgstr "Librairie GD"
+
+#: plugin-fw/includes/class-yith-system-status.php:142
+msgid "ImageMagick Version"
+msgstr "Version ImageMagick"
+
+#: plugin-fw/includes/class-yith-system-status.php:140
+msgid "SimpleXML"
+msgstr "SimpleXML"
+
+#: plugin-fw/includes/class-yith-system-status.php:139
+msgid "WordPress Cron"
+msgstr "Cron WordPress"
+
+#: plugin-fw/includes/class-yith-system-status.php:138
+msgid "TLS Version"
+msgstr "Version TLS"
+
+#: plugin-fw/includes/class-yith-system-status.php:136
+msgid "Available Memory"
+msgstr "Mémoire disponible"
+
+#: plugin-fw/includes/class-yith-system-status.php:135
+msgid "WooCommerce Version"
+msgstr "Version de WooCommerce"
+
+#: plugin-fw/includes/class-yith-system-status.php:161
+#: plugin-fw/includes/class-yith-system-status.php:162
+#: plugin-fw/includes/class-yith-system-status.php:187
+msgid "System Status"
+msgstr "État du système"
+
+#. translators: 1. user display name; 2. user ID; 3. user email.
+#: plugin-fw/templates/fields/ajax-customers.php:68
+#: plugin-fw/templates/fields/ajax-customers.php:79
+msgid "%1$s (#%2$s &ndash; %3$s)"
+msgstr "%1$s (n°%2$s – %3$s)"
+
+#: plugin-fw/includes/class-yith-system-status.php:518
+msgid "Disabled"
+msgstr "Désactivé"
+
+#: plugin-fw/includes/class-yith-system-status.php:518
+msgid "Enabled"
+msgstr "Activé"
+
+#: plugin-fw/includes/class-yith-system-status.php:134
+msgid "WordPress Version"
+msgstr "Version WordPress"
+
+#: plugin-fw/includes/class-yith-system-status.php:137
+msgid "PHP Version"
+msgstr "Version PHP"
+
+#: plugin-fw/includes/class-yith-system-status.php:141
+msgid "MultiByte String"
+msgstr "Chaînes multi-octets"
+
+#: plugin-fw/includes/class-yith-system-status.php:145
+msgid "OPCache Save Comments"
+msgstr "Cache OP d’enregistrement des commentaires"
+
+#. translators: %1$s open link tag, %2$s open link tag
+#: plugin-fw/includes/class-yith-system-status.php:372
+msgid "The system check has detected some compatibility issues on your installation.%1$sClick here%2$s to know more"
+msgstr "La vérification du système a détecté quelques problèmes de compatibilité sur votre installation.%1$sCliquez ici%2$s pour en savoir plus"
+
+#. translators: %1$s plugin name, %2$s requirement name
+#: plugin-fw/includes/class-yith-system-status.php:543
+msgid "%1$s needs %2$s enabled"
+msgstr "%1$s a besoin de %2$s activé"
+
+#. translators: %1$s plugin name, %2$s required memory amount
+#: plugin-fw/includes/class-yith-system-status.php:546
+msgid "%1$s needs at least %2$s of available memory"
+msgstr "%1$s a besoin d’au moins %2$s de mémoire disponible"
+
+#. translators: %1$s plugin name, %2$s version number
+#: plugin-fw/includes/class-yith-system-status.php:549
+msgid "%1$s needs at least %2$s version"
+msgstr "%1$s a besoin d’une version au minimum %2$s"
+
+#: plugin-fw/includes/class-yith-system-status.php:555
+msgid "Update it to the latest version in order to benefit of all new features and security updates."
+msgstr "La mettre à jour avec la dernière version afin de bénéficier de toutes les nouvelles fonctionnalités et mises à jour de sécurité."
+
+#: plugin-fw/includes/class-yith-system-status.php:559
+#: plugin-fw/includes/class-yith-system-status.php:565
+msgid "Contact your hosting company in order to update it."
+msgstr "Contacter l’hébergeur afin de le mettre à jour."
+
+#. translators: %1$s code, %2$s file name
+#: plugin-fw/includes/class-yith-system-status.php:570
+msgid "Remove %1$s from %2$s file"
+msgstr "Retirer %1$s du fichier %2$s"
+
+#: plugin-fw/includes/class-yith-system-status.php:578
+msgid "Contact your hosting company in order to enable it."
+msgstr "Contacter l’hébergeur afin de l’activer."
+
+#. translators: %1$s opening link tag, %2$s closing link tag
+#: plugin-fw/includes/class-yith-system-status.php:582
+#: plugin-fw/includes/class-yith-system-status.php:616
+msgid "Read more %1$shere%2$s or contact your hosting company in order to increase it."
+msgstr "Lire la suite %1$sici%2$s ou contactez votre hébergeur pour l’augmenter."
+
+#. translators: %s recommended memory amount
+#: plugin-fw/includes/class-yith-system-status.php:613
+msgid "For optimal functioning of our plugins, we suggest setting at least %s of available memory"
+msgstr "Pour un fonctionnement optimal de nos extensions, nous vous suggérons de régler au moins %s de la mémoire disponible"
+
+#: plugin-fw/templates/sysinfo/system-information-panel.php:27
+msgid "YITH System Information"
+msgstr "Informations système YITH"
+
+#: plugin-fw/includes/class-yith-system-status.php:368
+msgid "Warning!"
+msgstr "Avertissement !"
+
+#: plugin-fw/templates/fields/select-buttons.php:19
+msgid "Add All"
+msgstr "Tout ajouter"
+
+#: plugin-fw/templates/fields/select-buttons.php:20
+msgid "Remove All"
+msgstr "Tout retirer"
+
+#: plugin-fw/templates/fields/date-format.php:65
+msgid "Custom:"
+msgstr "Personnalisé :"
+
+#: plugin-fw/includes/class-yith-dashboard.php:137
+msgctxt "Button label"
+msgid "Close"
+msgstr "Fermer"
+
+#: plugin-fw/includes/class-yith-dashboard.php:96
+msgctxt "Plugin FW"
+msgid "View Changelog"
+msgstr "Voir le journal des modifications"
+
+#: plugin-fw/includes/class-yith-dashboard.php:56
+msgid "RSS Error:"
+msgstr "Erreur RSS :"
+
+#: plugin-fw/includes/class-yith-dashboard.php:36
+msgid "Latest news from YITH Blog"
+msgstr "Dernières nouvelles du blog YITH"
+
+#: plugin-fw/includes/class-yith-dashboard.php:35
+msgid "YITH Latest Updates"
+msgstr "Dernières mises à jour YITH"
+
+#: plugin-fw/includes/class-yith-dashboard.php:63
+msgid "An error has occurred, which probably means the feed is down. Try again later."
+msgstr "Une erreur est survenue, ce qui signifie probablement que le flux est en panne. Réessayez plus tard."
+
+#: plugin-fw/includes/class-yith-dashboard.php:97
+msgctxt "Plugin FW"
+msgid "Latest update released on"
+msgstr "Dernière mise à jour publiée le"
+
+#: plugin-fw/includes/builders/gutenberg/class-yith-gutenberg.php:156
+msgctxt "[gutenberg]: Category Name"
+msgid "YITH"
+msgstr "YITH"
+
+#. Author of the plugin
+#: init.php
+msgid "YITH"
+msgstr "YITH"
+
+#: plugin-fw/yit-plugin.php:243
+msgid "License"
+msgstr "Licence"
+
+#: plugin-fw/yit-plugin.php:98
+msgctxt "Plugin Row Meta"
+msgid "Premium version"
+msgstr "Version premium"
+
+#: plugin-fw/yit-plugin.php:90
+msgctxt "Plugin Row Meta"
+msgid "Documentation"
+msgstr "Documentation"
+
+#: plugin-fw/yit-plugin.php:86
+msgctxt "Plugin Row Meta"
+msgid "Live Demo"
+msgstr "Démo en ligne"
+
+#: plugin-fw/yit-plugin.php:94
+msgctxt "Plugin Row Meta"
+msgid "Support"
+msgstr "Support"
+
+#: plugin-fw/yit-plugin.php:239
+msgctxt "Action links"
+msgid "Settings"
+msgstr "Réglages"
+
+#. Description of the plugin
+#: init.php
+msgid "The <code><strong>YITH WooCommerce Quick View</strong></code> plugin allows your customers to have a quick look about products. <a href=\"https://yithemes.com/\" target=\"_blank\">Get more plugins for your e-commerce shop on <strong>YITH</strong></a>."
+msgstr "<code><strong>YITH WooCommerce Aperçu</strong></code> permet à vos clients d’avoir un aperçu rapide des produits. <a href=\"https://yithemes.com/\" target=\"_blank\">Obtenez plus de extensions pour votre boutique en ligne sur <strong>YITH</strong></a>."
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:106
+msgctxt "Privacy Policy Content"
+msgid "Payments"
+msgstr "Paiements"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:103
+msgctxt "Privacy Policy Content"
+msgid "What we share with others"
+msgstr "Ce que nous partageons avec les autres"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:100
+msgctxt "Privacy Policy Content"
+msgid "Who on our team has access"
+msgstr "Qui dans notre équipe a accès"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:97
+msgctxt "Privacy Policy Content"
+msgid "What we collect and store"
+msgstr "Ce que nous collectons et stockons"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:61
+msgctxt "Privacy Policy Guide Title"
+msgid "YITH Plugins"
+msgstr "Extensions YITH"
+
+#: plugin-fw/includes/privacy/class-yith-privacy.php:93
+msgctxt "Privacy Policy Content"
+msgid "This sample language includes the basics around what personal data your store may be collecting, storing and sharing, as well as who may have access to that data. Depending on what settings are enabled and which additional plugins are used, the specific information shared by your store will vary. We recommend consulting with a lawyer when deciding what information to disclose on your privacy policy."
+msgstr "Cet exemple de texte comprend les principes de base concernant les données personnelles que votre boutique peut collecter, stocker et partager, ainsi que les personnes susceptibles d’avoir accès à ces données. En fonction des réglages activés et des extensions supplémentaires utilisés, les informations spécifiques partagées par votre boutique varieront. Nous vous recommandons de consulter un avocat pour décider des informations à afficher dans votre politique de confidentialité."
+
+#: plugin-fw/templates/fields/icons.php:78
+msgid "Set Default"
+msgstr "Définir par défaut"
+
+#. Author URI of the plugin
+#: init.php
+msgid "https://yithemes.com/"
+msgstr "https://yithemes.com/"
+
+#: plugin-fw/templates/fields/upload.php:34
+#: plugin-fw/templates/panel/woocommerce/woocommerce-upload.php:37
+msgid "Upload"
+msgstr "Téléverser"
+
+#: plugin-fw/templates/fields/customtabs.php:17
+msgid "Close all"
+msgstr "Tout fermer"
+
+#: plugin-fw/templates/fields/customtabs.php:40
+#: plugin-fw/templates/fields/customtabs.php:81
+msgid "Value"
+msgstr "Valeur"
+
+#: plugin-fw/templates/fields/customtabs.php:41
+#: plugin-fw/templates/fields/customtabs.php:82
+msgid "Content of the tab. (HTML is supported)"
+msgstr "Contenu de l’onglet. (HTML supporté)"
+
+#: plugin-fw/templates/fields/customtabs.php:52
+msgid "Add custom product tab"
+msgstr "Ajouter un onglet de produit personnalisé"
+
+#: plugin-fw/templates/fields/customtabs.php:93
+msgid "Do you want to remove the custom tab?"
+msgstr "Voulez-vous supprimer l’onglet personnalisé ?"
+
+#: plugin-fw/templates/fields/image-gallery.php:36
+msgid "Delete image"
+msgstr "Supprimer l’image"
+
+#: plugin-fw/templates/fields/image-gallery.php:33
+msgid "Add Images to Gallery"
+msgstr "Ajouter des images à la galerie"
+
+#: plugin-fw/templates/fields/image-gallery.php:34
+msgid "Add to gallery"
+msgstr "Ajouter à la galerie"
+
+#: plugin-fw/templates/fields/image-gallery.php:35
+msgid "Add images"
+msgstr "Ajouter des images"
+
+#: plugin-fw/templates/fields/upload.php:39
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: plugin-fw/templates/fields/sidebars.php:41
+#: plugin-fw/templates/fields/sidebars.php:56
+msgid "Choose a sidebar"
+msgstr "Choisir une barre latérale"
+
+#: plugin-fw/templates/fields/sidebars.php:23
+msgid "Right sidebar"
+msgstr "Colonne latérale droite"
+
+#: plugin-fw/templates/panel/v2/panel-content-page.php:58
+#: plugin-fw/templates/panel/v2/woocommerce/woocommerce-form.php:70
+#: plugin-fw/templates/panel/woocommerce/woocommerce-form.php:41
+msgid "Reset Defaults"
+msgstr "Réinitialiser les réglages par défaut"
+
+#: plugin-options/settings-options.php:17
+msgid "General Options"
+msgstr "Options générales"
+
+#: plugin-options/settings-options.php:25
+msgid "Enable Quick View on mobile"
+msgstr "Activer la Vue rapide sur mobile"
+
+#. Plugin Name of the plugin
+#: init.php
+msgid "YITH WooCommerce Quick View"
+msgstr "YITH WooCommerce Quick View"
+
+#. Plugin URI of the plugin
+#: init.php
+msgid "https://yithemes.com/themes/plugins/yith-woocommerce-quick-view"
+msgstr "https://yithemes.com/themes/extensions/yith-woocommerce-quick-view"
+
+#: plugin-fw/templates/fields/customtabs.php:17
+msgid "Expand all"
+msgstr "Tout déplier"
+
+#: plugin-fw/templates/fields/image-gallery.php:26
+#: plugin-fw/templates/fields/image-gallery.php:37
+msgid "Delete"
+msgstr "Supprimer"
+
+#: plugin-fw/templates/fields/sidebars.php:20
+msgid "Left sidebar"
+msgstr "Colonne latérale gauche"
+
+#: plugin-fw/templates/fields/sidebars.php:26
+#: plugin-fw/templates/fields/sidebars.php:29
+msgid "No sidebar"
+msgstr "Aucune colonne latérale"
+
+#: plugin-fw/templates/fields/sidebars.php:39
+msgid "Left Sidebar"
+msgstr "Colonne latérale gauche"
+
+#: plugin-fw/templates/fields/sidebars.php:54
+msgid "Right Sidebar"
+msgstr "Colonne latérale droite"
+
+#: plugin-fw/includes/class-yit-pointers.php:96
+msgid "Plugins Upgraded"
+msgstr "Extensions misent à jour"
+
+#: plugin-fw/includes/class-yit-pointers.php:80
+msgid "Plugins Activated"
+msgstr "Extensions activées"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1567
+msgid "Sorting successful."
+msgstr "Tri réussi."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1566
+msgid "Sorry, import is disabled."
+msgstr "Désolé, l’importation est désactivée."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1564
+msgid "An error has occurred during import. Please try again."
+msgstr "Une erreur est survenue lors de l’importation. Veuillez réessayer."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1563
+msgid "Database imported correctly."
+msgstr "Base de données importée correctement."
+
+#: plugin-fw/includes/class-yit-assets.php:261
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:134
+#: plugin-fw/templates/panel/panel-content-page.php:14
+msgid "Are you sure?"
+msgstr "Confirmez-vous ?"
+
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:137
+#: plugin-fw/templates/panel/panel-content-page.php:38
+msgid "Reset to default"
+msgstr "Rétablir les réglages par défaut"
+
+#: plugin-fw/includes/class-yith-system-status.php:217
+msgid "YITH Plugins"
+msgstr "Extensions YITH"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:89
+msgid "Plugin Settings"
+msgstr "Réglages de l’extension"
+
+#: plugin-fw/includes/class-yit-plugin-panel-woocommerce.php:607
+msgid "The changes you have made will be lost if you leave this page."
+msgstr "Les modifications que vous avez apportées seront perdues si vous quittez cette page."
+
+#: plugin-fw/templates/fields/customtabs.php:34
+#: plugin-fw/templates/fields/customtabs.php:76
+msgid "Name"
+msgstr "Nom"
+
+#: plugin-options/settings-options.php:38
+msgid "Quick View"
+msgstr "Vue Rapide"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:90
+msgid "Settings"
+msgstr "Réglages"
+
+#: init.php:51
+msgid "YITH WooCommerce Quick View is enabled but not effective. It requires WooCommerce in order to work."
+msgstr "YITH WooCommerce Quick View est activé mais pas utilisable. Vous devez installer l’extension WooCommerce pour qu’elle fonctionne."
+
+#: init.php:65
+msgid "You can't activate the free version of YITH WooCommerce Quick View while you are using the premium one."
+msgstr "Vous ne pouvez pas activer la version gratuite de YITH WooCommerce Quick View si vous utilisez la version PRO."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:559
+#: plugin-fw/includes/class-yit-plugin-panel.php:562
+msgid "How to install premium version"
+msgstr "Comment installer la version PRO"
+
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:127
+#: plugin-fw/templates/panel/panel-content-page.php:29
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: plugin-fw/includes/class-yit-assets.php:262
+#: plugin-fw/includes/class-yit-plugin-subpanel.php:134
+#: plugin-fw/templates/panel/panel-content-page.php:14
+msgid "If you continue with this action, you will reset all options in this page."
+msgstr "Si vous continuez, vous réinitialiserez toutes les options sur cette page."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1557
+msgid "The element you have entered already exists. Please, enter another name."
+msgstr "L’élément que vous avez saisi existe déjà. Veuillez saisir un autre nom."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1558
+msgid "Settings saved"
+msgstr "Réglages enregistrées"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1559
+msgid "Settings reset"
+msgstr "Réglages réinitialisés"
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1560
+msgid "Element deleted correctly."
+msgstr "Élément bien supprimé."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1561
+msgid "Element updated correctly."
+msgstr "Élément bien mis à jour."
+
+#: plugin-fw/includes/class-yit-plugin-panel.php:1565
+msgid "The added file is not valid."
+msgstr "Le fichier ajouté est non valide."
+
+#: plugin-fw/templates/fields/customtabs.php:25
+#: plugin-fw/templates/fields/customtabs.php:68
+msgid "Remove"
+msgstr "Retirer"

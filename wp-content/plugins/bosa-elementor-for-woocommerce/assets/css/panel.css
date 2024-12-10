@@ -1,0 +1,21 @@
+.bew-widget:after {
+    color: #ededed;
+    content: 'BEW';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 9px;
+    background-color: #616161;
+    font-weight: 400;
+    padding: 2px 4px;
+    line-height: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: "Open Sans",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.elementor-panel-category .elementor-element .eicon-carousel {
+  font-size: 40px;
+  line-height: 0;
+  vertical-align: middle;
+}

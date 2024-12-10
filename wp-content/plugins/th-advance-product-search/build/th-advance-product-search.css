@@ -1,0 +1,60 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/block/th-advance-product-search/editor.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.wp-block.th-advance-product-search-wrapper {
+  --tapsp-width:550px;
+  --tapsp-bar-bg-clr: var(--tapsp-bar-bg-clr);
+  --tapsp-bar-text-clr: var(--tapsp-bar-text-clr);
+  --tapsp-button-bg-clr: #111;
+  --tapsp-button-txt-clr: #fff;
+  --tapsp-button-hvr-bg-clr: #111;
+  --tapsp-button-hvr-txt-clr: #fff;
+  --tapsp-search-border-clr:var(--tapsp-search-border-clr);
+  --tapsp-bar-radius: 4px;
+}
+
+.wp-block.th-advance-product-search-wrapper .thaps-search-box {
+  max-width: var(--tapsp-width);
+  width: var(--tapsp-width);
+}
+.wp-block.th-advance-product-search-wrapper .thaps-from-wrap {
+  background: var(--tapsp-bar-bg-clr);
+  border-color: var(--tapsp-search-border-clr);
+  border-radius: var(--tapsp-bar-radius);
+}
+.wp-block.th-advance-product-search-wrapper .thaps-search-autocomplete {
+  background-color: transparent;
+}
+.wp-block.th-advance-product-search-wrapper .thaps-search-autocomplete::-moz-placeholder {
+  color: var(--tapsp-bar-text-clr);
+}
+.wp-block.th-advance-product-search-wrapper .thaps-search-autocomplete,
+.wp-block.th-advance-product-search-wrapper .thaps-search-autocomplete::placeholder {
+  color: var(--tapsp-bar-text-clr);
+}
+.wp-block.th-advance-product-search-wrapper .thaps-search-autocomplete:focus {
+  box-shadow: none;
+  outline: none;
+}
+.wp-block.th-advance-product-search-wrapper #thaps-search-button {
+  width: auto;
+  background: var(--tapsp-button-bg-clr);
+  color: var(--tapsp-button-txt-clr);
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--tapsp-bar-radius);
+}
+.wp-block.th-advance-product-search-wrapper #thaps-search-button:hover {
+  background: var(--tapsp-button-hvr-bg-clr);
+  color: var(--tapsp-button-hvr-txt-clr);
+}
+.wp-block.th-advance-product-search-wrapper .thaps-search-box .icon-style,
+.wp-block.th-advance-product-search-wrapper .thaps-search-box .click-icon,
+.wp-block.th-advance-product-search-wrapper .submit-active #thaps-search-button .th-icon,
+.wp-block.th-advance-product-search-wrapper .bar_style .th-icon, .wp-block.th-advance-product-search-wrapper .icon_style .th-icon {
+  color: var(--tapsp-icon-clr);
+}
+.wp-block.th-advance-product-search-wrapper .thaps-box-open .tapsp-icon-arrow {
+  background: var(--tapsp-bar-bg-clr);
+}
+
+/*# sourceMappingURL=th-advance-product-search.css.map*/
