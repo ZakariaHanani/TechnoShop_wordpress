@@ -1,0 +1,126 @@
+.th-shop-mania-wrapper-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 41px 40px 20px 40px!important;
+}
+.th-shop-mania-wrapper-banner > div.left{
+    width: 51%;
+}
+.th-shop-mania-wrapper-banner > div.right{
+    width: 45%;
+}
+.wp-core-ui .th-shop-mania-wrapper-banner .button-primary,
+.wp-core-ui .th-shop-mania-wrapper-banner .button{
+   padding: 8px 18px !important;
+    min-width: 154px;
+    background: #6ca12b;
+    outline: 0;
+    color: #FFF;
+    letter-spacing: 1.4px;
+    font-size: 14px;
+    border-radius: 4px;
+    border-color: #6ca12b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    text-transform: uppercase;
+}
+#go-to-starter-sites:after{
+    content: "\f344";
+    font-family: "Dashicons";
+    margin-left: 9px;
+}
+.wp-core-ui .th-shop-mania-wrapper-banner .button{
+   margin: 0 21px 21px 0;
+}
+.wp-core-ui .th-shop-mania-wrapper-banner .button:focus{
+    outline: 0;
+    box-shadow: 0 0 0 1px #6ca12b;
+}
+.wp-core-ui .th-shop-mania-wrapper-banner .button.learn-more{
+    background: #FFF;
+    color: #6C1BC3;
+}
+.th-shop-mania-wrapper-banner .title{
+    font-size: 26px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    margin: 0 0 21px 0;
+}
+.th-shop-mania-wrapper-banner img{
+    max-width: 100%;
+}
+.th-shop-mania-wrapper-banner p{
+    color: #494545;
+    font-size: 18px;
+    margin: 0 0 27px 0;
+    line-height: 27px;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  #install-th-shop-mania-blocks .loader {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+    display: none;
+  }
+  
+  /*  loader  */
+   .left .loader{
+    display: none;
+   }
+  .left .loader{
+     -webkit-animation: rotating 2s linear infinite;
+        -moz-animation: rotating 2s linear infinite;
+        -ms-animation: rotating 2s linear infinite;
+        -o-animation: rotating 2s linear infinite;
+        animation: rotating 2s linear infinite;
+        margin-left: 12px;
+  }
+  #wpbody-content .notice.th-shop-mania-wrapper-banner{
+    display: flex!important;
+  }
+@media screen and (max-width: 767px){
+    #wpbody-content .notice.th-shop-mania-wrapper-banner{
+        flex-wrap: wrap;
+    }
+    .th-shop-mania-wrapper-banner > div.left,
+    .th-shop-mania-wrapper-banner > div.right{
+        width: 100%;
+    }
+    .th-shop-mania-wrapper-banner > div.left{
+        margin-bottom: 21px;
+    }
+}

@@ -1,0 +1,38 @@
+{
+   "name": "ultimatemember/um-recaptcha",
+   "description": "UM:reCAPTCHA tools for development",
+   "type": "composer-plugin",
+   "authors": [
+      {
+         "name": "Ultimate Member Ltd.",
+         "email": "team@ultimatemember.com"
+      }
+   ],
+   "minimum-stability": "stable",
+   "prefer-stable" : true,
+   "config": {
+     "allow-plugins": {
+       "symfony/flex": true,
+       "dealerdirect/phpcodesniffer-composer-installer": true
+     }
+   },
+   "require": {
+      "ext-json": "*",
+      "ext-dom": "*",
+      "ext-exif": "*",
+      "ext-gd": "*",
+      "ext-fileinfo": "*",
+      "ext-curl": "*",
+      "ext-iconv": "*"
+   },
+   "scripts": {
+   },
+   "require-dev": {
+      "wp-cli/wp-cli": "*",
+      "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+      "object-calisthenics/phpcs-calisthenics-rules": "*",
+      "phpcompatibility/phpcompatibility-wp": "*",
+      "wp-coding-standards/wpcs": "2.3.0",
+      "squizlabs/php_codesniffer": "3.*"
+   }
+}

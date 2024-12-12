@@ -1,0 +1,369 @@
+<?php
+/**
+ * Export Users
+ *
+ * @package  UserRegistration/Admin
+ * @since    1.5.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * UR_Admin_Export_Users Class.
+ */
+class UR_Admin_Export_Users {
+
+	/**
+	 * Constructor
+	 */
+	public function __construct() {
+
+		add_action( 'admin_init', array( $this, 'export_csv' ) );
+	}
+
+	/**
+	 * Outputs Export Users Page
+	 *
+	 * @return void
+	 */
+	public static function output() {
+		$all_forms = ur_get_all_user_registration_form();
+		include_once __DIR__ . '/views/html-admin-page-export-users.php';
+	}
+
+	/**
+	 * Exports users data along with extra information in CSV format.
+	 *
+	 * @param int $form_id Form ID.
+	 * @return void
+	 */
+	public function export_csv( $form_id ) {
+
+		// Check for non empty $_POST.
+		if ( ! isset( $_POST['user_registration_export_users'] ) ) {
+			return;
+		}
+
+		// Nonce check.
+		if ( empty( $_REQUEST['_wpnonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_REQUEST['_wpnonce'] ) ), 'user-registration-settings' ) ) {
+			die( esc_html__( 'Action failed. Please refresh the page and retry.', 'user-registration' ) );
+		}
+		$form_id = isset( $_POST['export_users'] ) ? wp_unslash( $_POST['export_users'] ) : 0; //phpcs:ignore.
+
+		// Return if form id is not set and current user doesnot have export capability.
+		if ( ! isset( $form_id ) || ! current_user_can( 'export' ) ) {
+			return;
+		}
+		$checked_additional_fields = array();
+		if ( isset( $_POST['all_fields_dict'] ) ) {
+			$all_fields                = sanitize_text_field( wp_unslash( $_POST['all_fields_dict'] ) );
+			$all_fields                = (array) json_decode( $all_fields );
+			$all_fields                = array_keys( $all_fields );
+			$all_add_fields            = array( 'user_id', 'user_role', 'ur_user_status', 'date_created', 'date_created_gmt' );
+			$checked_fields 		   = isset( $_POST['csv-export-custom-fields'] ) ? ur_clean( $_POST['csv-export-custom-fields'] ) : array(); //phpcs:ignore.
+			$checked_additional_fields = isset( $_POST['all_selected_fields_dict'] ) ? ur_clean( $_POST['all_selected_fields_dict'] ) :	array(); //phpcs:ignore.
+			if ( empty( $checked_fields ) && empty( $checked_additional_fields ) ) {
+				$checked_fields            = $all_fields;
+				$checked_additional_fields = $all_add_fields;
+			}
+
+			$unchecked_fields = array_diff( $all_fields, $checked_fields );
+		} else {
+			$unchecked_fields          = array();
+			$checked_additional_fields = array( 'user_id', 'user_role', 'ur_user_status', 'date_created', 'date_created_gmt' );
+		}
+		$from_date     = isset( $_POST['from_date'] ) ? sanitize_text_field( wp_unslash( $_POST['from_date'] ) ) : '';
+		$to_date       = isset( $_POST['to_date'] ) ? sanitize_text_field( wp_unslash( $_POST['to_date'] ) ) : '';
+		$export_format = isset( $_POST['export_format'] ) ? sanitize_text_field( wp_unslash( $_POST['export_format'] ) ) : 'csv';
+
+		$users = get_users(
+			array(
+				'ur_form_id' => $form_id,
+			)
+		);
+
+		if ( count( $users ) === 0 ) {
+			echo '<div id="message" class="updated inline notice notice-error"><p><strong>' . esc_html__( 'No users found with this form id.', 'user-registration' ) . '</strong></p></div>';
+			return;
+		}
+
+		$columns   = $this->generate_columns( $form_id, $unchecked_fields, $checked_additional_fields );
+		$rows      = $this->generate_rows( $users, $form_id, $unchecked_fields, $checked_additional_fields, $from_date, $to_date );
+		$form_name = str_replace( ' &#8211; ', '-', get_the_title( $form_id ) ); //phpcs:ignore;
+		$form_name = str_replace( '&#8211;', '-', $form_name );
+		$form_name = strtolower( str_replace( ' ', '-', $form_name ) );
+
+		if ( ob_get_contents() ) {
+			ob_clean();
+		}
+		if ( 'csv' === $export_format ) {
+			$file_name = $form_name . '-' . current_time( 'Y-m-d_H:i:s' ) . '.csv';
+			// Force download.
+			header( 'Content-Type: application/force-download' );
+			header( 'Content-Type: application/octet-stream' );
+			header( 'Content-Type: application/download' );
+
+			// Disposition / Encoding on response body.
+			header( "Content-Disposition: attachment;filename=\"{$file_name}\";charset=utf-8" );
+			header( 'Content-Transfer-Encoding: binary' );
+
+			$handle = fopen( 'php://output', 'w' );
+
+			// Handle UTF-8 chars conversion for CSV.
+			fprintf( $handle, chr( 0xEF ) . chr( 0xBB ) . chr( 0xBF ) );
+
+			// Put the column headers.
+			fputcsv( $handle, array_values( $columns ) );
+
+			// Put the row values.
+			foreach ( $rows as $row ) {
+				fputcsv( $handle, $row );
+			}
+
+			fclose( $handle );
+		} elseif ( 'json' === $export_format ) {
+			$file_name = $form_name . '-' . current_time( 'Y-m-d_H:i:s' ) . '.json';
+			// Force download.
+			header( 'Content-Type: application/force-download' );
+
+			// Disposition / Encoding on response body.
+			header( "Content-Disposition: attachment;filename=\"{$file_name}\";charset=utf-8" );
+			header( 'Content-type: application/json' );
+			echo wp_json_encode( $rows );
+
+		}
+
+		exit;
+	}
+
+	/**
+	 * Generate Column for CSV export.
+	 *
+	 * @param int   $form_id  Form ID.
+	 * @param array $unchecked_fields Unchecked Fields.
+	 * @param array $checked_additional_fields Checked Fields.
+	 * @return array    $columns  CSV Export Columns.
+	 */
+	public function generate_columns( $form_id, $unchecked_fields = array(), $checked_additional_fields = array() ) {
+
+		// Checked additional fields.
+		$checked_additional_field_columns = array();
+		$user_id_column                   = array();
+		foreach ( $checked_additional_fields as $key => $value ) {
+			if ( 'user_id' === $value ) {
+				$user_id_column = array(
+					'user_id' => __( 'User ID', 'user-registration' ),
+				);
+			} elseif ( 'user_role' === $value ) {
+				$checked_additional_field_columns['user_role'] = __( 'User Role', 'user-registration' );
+			} elseif ( 'ur_user_status' === $value ) {
+				$checked_additional_field_columns['ur_user_status'] = __( 'User Status', 'user-registration' );
+			} elseif ( 'date_created' === $value ) {
+				$checked_additional_field_columns['date_created'] = __( 'User Registered', 'user-registration' );
+			} elseif ( 'date_created_gmt' === $value ) {
+				$checked_additional_field_columns['date_created_gmt'] = __( 'User Registered GMT', 'user-registration' );
+			}
+		}
+		// Filter for excluding File Upload Field.
+		add_filter( 'user_registration_meta_key_label', array( __CLASS__, 'exclude_field_key' ), 10, 3 );
+		$columns = ur_get_meta_key_label( $form_id );
+		remove_filter( 'user_registration_meta_key_label', array( __CLASS__, 'exclude_field_key' ) );
+
+		$exclude_columns = array_merge(
+			$unchecked_fields,
+			array(
+				'user_confirm_password',
+				'user_confirm_email',
+			)
+		);
+
+		/**
+		 * Filter the columns to exclude for csv export.
+		 *
+		 * @param array $exclude_columns Columns to Exclude.
+		 */
+		$exclude_columns = apply_filters(
+			'user_registration_csv_export_exclude_columns',
+			$exclude_columns
+		);
+
+		foreach ( $exclude_columns as $exclude_column ) {
+			unset( $columns[ $exclude_column ] );
+		}
+
+		$columns = array_merge( $user_id_column, $columns );
+		$columns = array_merge( $columns, $checked_additional_field_columns );
+
+		/**
+		 * Filter the columns for csv export.
+		 *
+		 * @param array $columns Columns to Export.
+		 */
+		return apply_filters( 'user_registration_csv_export_columns', $columns );
+	}
+
+	/**
+	 * Generate rows for CSV export
+	 *
+	 * @param obj    $users   Users Data.
+	 * @param int    $form_id Form ID.
+	 * @param array  $unchecked_fields Unchecked Fields.
+	 * @param array  $checked_additional_fields Checked Fields.
+	 * @param string $from_date From date.
+	 * @param string $to_date To date.
+	 * @return array    $rows    CSV export rows.
+	 */
+	public function generate_rows( $users, $form_id, $unchecked_fields = array(), $checked_additional_fields = array(), $from_date = '', $to_date = '' ) {
+
+		$rows = array();
+
+		foreach ( $users as $user ) {
+
+			if ( ! isset( $user->data->ID ) ) {
+				continue;
+			}
+
+			$user_form_id      = get_user_meta( $user->data->ID, 'ur_form_id', true );
+			$user_status       = get_user_meta( $user->data->ID, 'ur_user_status', true );
+			$user_email_status = get_user_meta( $user->data->ID, 'ur_confirm_email', true );
+			$status            = ur_get_user_status( $user_status, $user_email_status );
+			// If the user is not submitted by selected registration form.
+			if ( $user_form_id !== $form_id ) {
+				continue;
+			}
+			$user_id_row    = array();
+			$user_extra_row = ur_get_user_extra_fields( $user->data->ID );
+
+			$columns = $this->generate_columns( $form_id, $unchecked_fields );
+
+			foreach ( $user_extra_row as $user_extra_data_key => $user_extra_data ) {
+
+				if ( ! isset( $columns[ $user_extra_data_key ] ) ) {
+
+					// Remove the rows value that are not in columns.
+					unset( $user_extra_row[ $user_extra_data_key ] );
+				} else {
+					$field_data = ur_get_field_data_by_field_name( $form_id, $user_extra_data_key );
+					if ( isset( $field_data['field_key'] ) && 'file' === $field_data['field_key'] ) {
+						$attachment_ids = is_array( $user_extra_data ) ? $user_extra_data : explode( ',', $user_extra_data );
+						$file_link      = '';
+						foreach ( $attachment_ids as $attachment_id ) {
+							if ( is_numeric( $attachment_id ) ) {
+								$file_path = wp_get_attachment_url( $attachment_id );
+								if ( $file_path ) {
+									$file_link .= esc_url( $file_path ) . ' ; ';
+								}
+							} elseif ( ur_is_valid_url( $attachment_id ) ) {
+								$file_link .= esc_url( $attachment_id ) . ' ; ';
+							}
+						}
+						$user_extra_row[ $user_extra_data_key ] = $file_link;
+					} elseif ( isset( $field_data['field_key'] ) && ( 'checkbox' === $field_data['field_key'] || 'multi_select2' === $field_data['field_key'] ) ) {
+						$values = ( is_array( $user_extra_data ) && ! empty( $user_extra_data ) ) ? implode( ',', $user_extra_data ) : $user_extra_data; //phpcs:ignore
+						$user_extra_row[ $user_extra_data_key ] = $values;
+					}
+				}
+			}
+
+			$user_table_data     = ur_get_user_table_fields();
+			$user_table_data_row = array();
+
+			// Get user table data that are on column.
+			foreach ( $user_table_data as $data ) {
+				$columns = $this->generate_columns( $form_id, $unchecked_fields );
+
+				if ( isset( $columns[ $data ] ) ) {
+					$user_table_data_row = array_merge( $user_table_data_row, array( $data => $user->$data ) );
+				}
+			}
+
+			$user_meta_data     = ur_get_registered_user_meta_fields();
+			$user_meta_data_row = array();
+
+			// Get user meta table data that are on column.
+			foreach ( $user_meta_data as $meta_data ) {
+				$columns = $this->generate_columns( $form_id, $unchecked_fields );
+
+				if ( isset( $columns[ $meta_data ] ) ) {
+					$user_meta_data_row = array_merge( $user_meta_data_row, array( $meta_data => get_user_meta( $user->data->ID, $meta_data, true ) ) );
+				}
+			}
+
+			$user_extra_row = array_merge( $user_extra_row, $user_table_data_row );
+			$user_extra_row = array_merge( $user_extra_row, $user_meta_data_row );
+
+			// Get user additional ckecked row.
+			$user_additional_checked_row = array();
+			foreach ( $checked_additional_fields as $key => $value ) {
+				if ( 'user_id' === $value ) {
+					$user_id_row = array( 'user_id' => $user->data->ID );
+				} elseif ( 'user_role' === $value ) {
+					$user_additional_checked_row['user_role'] = is_array( $user->roles ) ? implode( ',', $user->roles ) : $user->roles;
+				} elseif ( 'ur_user_status' === $value ) {
+					$user_additional_checked_row['ur_user_status'] = is_array( $status ) ? implode( ',', $status ) : $status;
+				} elseif ( 'date_created' === $value ) {
+					$user_additional_checked_row['date_created'] = $user->data->user_registered;
+				} elseif ( 'date_created_gmt' === $value ) {
+					$user_additional_checked_row['date_created_gmt'] = get_gmt_from_date( $user->data->user_registered );
+				}
+			}
+			$user_registered_date = get_gmt_from_date( $user->data->user_registered );
+			$from_date            = '' !== $from_date ? $from_date : '';
+			$to_date              = '' !== $to_date ? $to_date : gmdate( 'Y-m-d' );
+			if ( gmdate( 'Y-m-d', strtotime( $user_registered_date ) ) >= gmdate( 'Y-m-d', strtotime( $from_date ) ) && gmdate( 'Y-m-d', strtotime( $user_registered_date ) ) <= gmdate( 'Y-m-d', strtotime( $to_date ) ) ) {
+				$user_row = array_merge( $user_id_row, $user_extra_row );
+				$user_row = array_merge( $user_row, $user_additional_checked_row );
+				/**
+				 * Reorder rows according to the values in column.
+				 *
+				 * @see https://stackoverflow.com/a/44774818/9520912
+				 */
+				$user_row = array_merge( array_fill_keys( array_keys( $this->generate_columns( $form_id, $unchecked_fields, $checked_additional_fields ) ), '' ), $user_row );
+				$rows[]   = $user_row;
+			}
+		}
+
+		/**
+		 * Filter the rows for csv export.
+		 *
+		 * @param array $rows Rows to Export.
+		 * @param array $users Users to Export.
+		 */
+		return apply_filters( 'user_registration_csv_export_rows', $rows, $users );
+	}
+
+	/**
+	 * Customise Filter for unset file upload field.
+	 *
+	 * @param array $key_label Field Key and Label Array.
+	 * @param int   $form_id Form ID.
+	 * @param array $post_content_array Post Content Array.
+	 * @return array
+	 */
+	public static function exclude_field_key( $key_label, $form_id, $post_content_array ) {
+
+		/**
+		 * Filter the field keys to exclude for export.
+		 *
+		 * @param array Array of fields.
+		 */
+		$exclude_field_keys = apply_filters( 'user_registration_export_user_exclude_field_keys', array( 'html', 'section_title' ) );
+
+		foreach ( $post_content_array as $post_content_row ) {
+			foreach ( $post_content_row as $post_content_grid ) {
+				foreach ( $post_content_grid as $field ) {
+					if ( isset( $field->field_key ) && isset( $field->general_setting->field_name ) ) {
+						if ( in_array( $field->field_key, $exclude_field_keys, true ) ) {
+							unset( $key_label[ $field->general_setting->field_name ] );
+						}
+					}
+				}
+			}
+		}
+		return $key_label;
+	}
+}
+
+new UR_Admin_Export_Users();

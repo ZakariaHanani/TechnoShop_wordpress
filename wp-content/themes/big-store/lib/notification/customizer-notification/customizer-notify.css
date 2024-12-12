@@ -1,0 +1,81 @@
+#accordion-section-ts_themehunk_customizer_custom_section{
+	display: block!important;
+	background: #FFF;
+    padding: 12px 0;
+}
+#accordion-section-ts_themehunk_customizer_custom_section .accordion-section-title{
+	padding: 0 16px;
+	margin: 0;
+	font-size: 16px;
+	line-height: 25px;
+  border: 0;
+	font-weight: 500;
+	margin-bottom: 12px;
+	color: #111;
+}
+#customize-controls .control-section-ts_themehunk_customizer_custom_section.cannot-expand:hover .accordion-section-title{
+	background: transparent;
+	border: 0;
+	color: #111;
+}
+
+#accordion-section-ts_themehunk_customizer_custom_section .accordion-section-title:hover{
+	background: initial;
+}
+#accordion-section-ts_themehunk_customizer_custom_section .ts-themehunk-custom-section{
+	background: #f9f9f9;
+	display: flex;
+	padding: 0 18px;
+	flex-wrap: wrap;
+}
+#accordion-section-ts_themehunk_customizer_custom_section .ts-themehunk-custom-section button{
+	margin-bottom: 21px;
+}
+#go-to-starter-sites{
+	display: none;
+}
+#install-hunk-companion{
+	background: transparent;
+    color: #2271b1;
+}
+.wp-core-ui .ts-themehunk-custom-section .button-primary:focus{
+	box-shadow: none;
+}
+.th-loader{
+	margin-top: 3px;
+	margin-left: 9px;
+	 -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+    display: none;
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }

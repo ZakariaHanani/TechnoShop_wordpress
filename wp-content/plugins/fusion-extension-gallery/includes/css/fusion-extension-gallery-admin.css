@@ -1,0 +1,78 @@
+/**
+ * WP Admin styles for Gallery extension
+ */
+
+.gallery-sort .gallery-item	{
+	float:none;
+	padding:10px;
+	position:relative;
+	overflow:visible;
+	border:1px solid #ddd;
+	background:#f0f0f0;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	margin:0 0 10px;
+}
+
+.gallery-sort .gallery-item.collapse-active	{
+	height:50px;
+	overflow:hidden;	
+}
+
+.gallery-sort .gallery-item.collapse-active:after	{
+	content:'';
+	display:block;
+	width:100%;
+	height:100%;
+	border-radius:4px;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	background: -moz-linear-gradient(top,  rgba(240,240,240,0) 0%, rgba(240,240,240,0) 50%, rgba(240,240,240,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,240,240,0)), color-stop(50%,rgba(240,240,240,0)), color-stop(100%,rgba(240,240,240,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(240,240,240,0) 0%,rgba(240,240,240,0) 50%,rgba(240,240,240,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(240,240,240,0) 0%,rgba(240,240,240,0) 50%,rgba(240,240,240,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(240,240,240,0) 0%,rgba(240,240,240,0) 50%,rgba(240,240,240,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(240,240,240,0) 0%,rgba(240,240,240,0) 50%,rgba(240,240,240,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0f0f0', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-9 */
+}
+
+.gallery-sort .gallery-item.content-item	{
+	background-color:#d9edf7;
+	border-color:#bce8f1;
+	color:#31708f;
+}
+
+.gallery-sort .gallery-item:hover	{
+	cursor:move;
+}       	       
+
+.gallery-sort .gallery-item .remove-gallery-item	{
+	position:absolute;
+	top:5px;
+	right:10px;
+	z-index:3;
+	font-size:10px;
+	text-decoration:none;
+	color:#ff0000;
+}
+
+.gallery-sort .gallery-item .collapse-gallery-item	{
+	position:absolute;
+	top:5px;
+	right:60px;
+	z-index:3;
+	font-size:10px;
+	text-decoration:none;
+	color:#0073aa;
+}
+
+.wp-core-ui .button.expand-all-gallery-items	{
+	margin-left:5px;
+}
+
+.wp-core-ui .button.collapse-all-gallery-items	{
+	margin-left:5px;
+}

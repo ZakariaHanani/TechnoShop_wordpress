@@ -1,0 +1,1356 @@
+= 3.3.5.2   - 21/11/2024 =
+* Fix   	- Fatal error when replacing gravatar image.
+* Fix       - Translation not working properly after WordPress v6.7.
+* Fix       - WordPress _load_textdomain_just_in_time notice after v6.7.
+
+= 3.3.5.1   - 19/11/2024 =
+* Fix   	- Edit profile form duplication.
+
+= 3.3.5     - 18/11/2024 =
+* Feature  	- All User Registration widgets for Oxygen builder.
+* Enhance	- My account page design.
+* Enhance   - Most used integration list on integration settings in form builder.
+* Tweak     - Global settings design.
+* Fix		- Form save action not working for initial form publish captcha setting.
+* Fix		- Random order of form fields in email template during user registration.
+* Fix		- Hide Unapproved Users action run for users not from our source.
+* Dev		- Compatibility for convertKit.
+
+= 3.3.4.1  - 16/10/2024 =
+* Fix      - Setup wizard going blank on registration settings step.
+
+= 3.3.4    - 16/10/2024 =
+* Enhance  - Separate Captcha Settings for Login and Registration Form.
+* Tweak    - My account selection validation and install pages.
+* Tweak    - Send new registered email if approval link email is disabled.
+* Dev      - User edit feature for admin.
+* Dev 	   - Compatibility for Conditional logic in row.
+* Fix      - Logout not working when redirect URL is home page.
+* Fix      - Export CSV user with big data cause the bad gateway error.
+* Fix      - Date Range throws validation message when date field is localized.
+
+= 3.3.3    - 19/09/2024 =
+* Fix      - Select all option not working in checkbox field.
+* Fix      - Continue setup wizard button not working properly.
+* Fix      - Email translations issue with user registered language in WPML.
+* Fix      - Conflict with lost password when WooCommerce My Account Page selected in user registration settings.
+* Tweak    - Added skip setup button in continue setup wizard notice.
+* Tweak    - Added filters to change reset password validation error message.
+* Tweak    - Changed feature item label from Pro to Personal to avoid confusion.
+* Tweak    - Install pages notice display only if continue setup wizard notice is skipped.
+
+= 3.3.2.1  - 11/09/2024 =
+* Fix      - Tooltip icon is not being displayed in Global Settings.
+
+= 3.3.2    - 10/09/2024 =
+* Feature  - All User Registration widgets for WPBakery.
+* Feature  - All User Registration widgets for Elementor.
+* Enhance  - User Registration Dashboard Page.
+* Enhance  - Support relative url in registration url .
+* Enhance  - Show Most used Integration Lists on Integration Tab.
+* Enhance  - Warning for field deletion used in Conditional Logic.
+* Enhance  - Introduced Settings Sidebar ( Setup Checklist and Premium Benefits ).
+* Dev      - Compatibility for MailPoet Integration.
+* Fix      - Checkbox and Multiselect smart tag parse issue.
+* Fix 	   - Option values not saved properly in form builder.
+* Fix      - Mismatch columns error log on External Field Sync.
+* Fix      - Login block displaying login form when user is logged in.
+* Fix      - Handle Exception while any option field is blank and form saved.
+* Fix      - Save Value for separate shipping as true or false in WooCommerce.
+
+= 3.3.1     - 19/08/2024 =
+* Feature   - Embed option in form builder.
+* Enhance   - Gutenberg block preview.
+* Enhance   - Improved error handling for mail sending.
+* Enhance   - Prevent deleting user email and password fields.
+* Enhance   - Disable profile picture sync with registration form.
+* Enhance   - Custom password strength and realtime password strength guide.
+* Enhance   - Display notice about possible spam registrations.
+* Tweak     - Onboarding texts and buttons improvement.
+* Tweak     - Improve error handling when ajax is disabled.
+* Tweak     - Moved Elementor Widget for Registration Forms to free.
+* Dev       - Compatibility for Authorize.net Addon.
+* Dev       - Compatibility for SMS verification.
+* Dev       - Add noreferer and noopener in all target blank anchor tags.
+* Fix       - Unable to publish form from draft status.
+* Fix       - Undefined variable $form_row_data.
+* Fix       - Disable default wordpress login not working.
+* Fix       - The email content translation issues with WPML plugin.
+* Fix       - Anyone can register option not working due to conflict with the Really Simple SSL plugin.
+
+= 3.3.0.1  - 05/08/2024 =
+* Fix      - Fatal error while fetching large amount of user data on page load.
+
+= 3.3.0    - 01/08/2024 =
+* Refactor - Custom plugin notice rendering.
+* Feature  - Akismet integration.
+* Enhance  - Script and styles optimization.
+* Dev      - Compatibility for Signature Field.
+* Dev      - Compatibility temporarily disable users.
+* Dev      - Compatibility for image based captcha.
+* Fix      - Avoid multiple query for same info.
+* Fix      - Modules not loading due to ssl issue.
+* Fix      - Input field validating while conditionally hidden.
+* Fix      - Login Redirection not working after email confirmation.
+* Fix      - Not able to login with email provided in username field.
+* Fix      - Smart Tags related to current page not working in certain emails.
+
+
+= 3.2.1.3  - 03/07/2024 =
+* Fix      - Remove unnecessary source map from build.
+
+= 3.2.1.2  - 24/06/2024 =
+* Tweak    - Redirect to dashboard addons page when extensions menu is clicked.
+* Dev      - Added filter hook to add extra section settings.
+* Dev      - Added filter hook for login redirection after auto login.
+* Fix      - MultiSite db prefix query issue.
+* Fix      - Duplicate error message for date field.
+* Fix      - Add capability and nonce for license activation and deactivation.
+
+= 3.2.1.1  - 06/06/2024 =
+* Dev      - Added filter hook to to check user instance.
+* Fix      - Notice not being dismissed.
+* Fix      - Function ur_get_screen_ids not defined.
+* Fix      - Check function exists before checking capabilities.
+
+= 3.2.1    - 31/05/2024 =
+* Enhance  - Smart tags picker design.
+* Enhance  - All forms list table design.
+* Enhance  - New user registered email added.
+* Enhance  - Admin approval email content updated.
+* Enhance  - WPML email translation with user selected language.
+* Tweak    - Enqueing style and script only to UR screens.
+* Dev      - Check user capability before performing action.
+* Dev      - Introduce function to get field value by field name while registration.
+* Fix      - Import Form Issue from Unpriviledge User.
+* Fix      - Disable the default WordPress not working.
+* Fix      - Deprecated function notices in getting started page.
+* Fix      - Conditionally hidden invite code throws required error message.
+* Fix      - Smart Phone Field required error message not displayed on submit.
+
+= 3.2.0.1  - 26/04/2024 =
+* Tweak    - Introduce new hook to modify token expiration duration.
+* Fix      - Unable to submit form due to TypeError.
+* Fix      - Divide by zero error on number validation.
+* Fix      - Required Field error message for conditionally hidden fields.
+
+= 3.2.0    - 15/04/2024 =
+* Feature  - Dashboard Page.
+* Feature  - Automatic user login after email confirmation and reset password.
+* Enhance  - Text Area Enhancement.
+* Enhance  - User registration Gutenberg blocks.
+* Enhance  - Send Bulk Resend Verification Email.
+* Enhance  - Screenshot video on upgrade to pro popup.
+* Tweak    - Filter to change email body width.
+* Tweak    - Change the 'All UR Forms' filter name to 'All Users' at Users > All Users.
+* Tweak    - Tooltip message for Username, Text and Textarea of Length Advance Settings.
+* Fix      - Backend validation for Number field.
+* Fix      - PHP version 8.3 compatibility issue.
+* Fix      - My Account URL issue on custom permalink.
+* Fix      - Avatar files are left behind after deleting user.
+* Fix      - Denied is not working when email confirmation is enabled.
+* Fix      - Checkbox values are not being saved when there is a single option.
+* Fix      - When no redirection the waiting period for redirection should be hidden.
+* Fix      - Required Validation of Text Fields Issue (Input, First Name, Last Name, etc.).
+* Fix      - Email is not sent to the user and admin when stripe field is conditionally hidden.
+* Dev      - Compatibility for Merging module features in pro.
+* Dev      - Compatibility for Subscription Plan trail period.
+* Dev      - Compatibility for WooCommerce My-Account Edit Profile sync.
+* Dev      - Compatibility for Added smart phone number in billing phone number.
+* Dev      - Compatibility for Woocommerce Product page Frontend and Backend Validation.
+* Dev      - Compatibility for Recurring payment to be set 1DAY instead of 1YEAR in payments.
+* Dev      - Compatibility for Tooltip removed when clicked multiple times on field in builder.
+
+= 3.1.5    - 05/03/2024
+* Fix      - Missing Escaping for display name.
+* Fix      - Deprecated dynamic properties in php v8.2.
+* Fix      - Critical Error thrown while deleting bulk forms.
+* Fix      - Checkbox sync issue with WooCommerce checkout page.
+* Fix      - Critical Error while login payment before login option.
+
+= 3.1.4    - 12/02/2024
+* Feature  - Deny Smart Tag in Admin Approval.
+* Tweak    - From address going wrong in some emails.
+* Tweak    - Docs comments for developer documentation.
+* Tweak    - Introduce form name smart tag in user registration.
+* Tweak    - Redirection back to previous page after registration.
+* Tweak    - Send user registration email template while sending reset password email from admin area.
+* Dev      - Compatibility for image choice feature.
+* Dev      - Compatibility for subscription plan feature.
+* Dev      - Compatibility for the payment invoice feature.
+* Dev      - Compatibility for trail period in subscription feature.
+* Dev      - Compatibility for passwordless login email content modification.
+* Fix      - Date format for date field.
+* Fix      - Undefined index post_content.
+* Fix      - Fatal error in log handler file.
+* Fix      - Live user registered notice js error.
+* Fix      - Remove extra password field value in mail.
+* Fix      - Country Field default value none Frontend Issue.
+* Fix      - Checkbox not updating properly on profile update when all unchecked.
+* Fix      - Validation error while profile update if field visibility is applied on fields.
+* Fix      - Fields select 2 and multi select option not changing instantly in builder setting area.
+
+= 3.1.3    - 02/01/2024
+* Enhance  - Smart tags parseable endpoint content.
+* Tweak    - Default form fields re arrangement.
+* Tweak    - Pending users meta query optimization.
+* Tweak    - Parse approval link smart tag properly.
+* Tweak    - Manual user counting replaced with SQL query.
+* Tweak    - Added New option None in the default of country field.
+* Tweak    - Escape and made the Approve now text translation ready.
+* Fix      - Support decimal value in number field.
+* Fix      - Select field option not changing instantly.
+* Fix      - Lost password page redirecting to login page.
+* Fix      - Send email change confirmation with templates.
+* Fix      - Placeholder is not working in the country field.
+* Fix      - Email not sent when stripe conditionally hidden.
+* Fix      - Welcome email sent when profile details updated by admin.
+* Dev      - Deprecated ur_has_date_field function.
+* Dev      - Trigger hook for redirect after logout.
+* Dev      - Added filter hook to modify find myaccount shortcode in page.
+* Dev      - Deprecated user_registration_before_edit_profile_form action hook.
+
+= 3.1.2    - 13/12/2023
+* Refactor - Timepicker library changed from timepicker to flatpickr.
+* Refactor - Size option in input field replaced bt limit by characters option.
+* Feature  - List pages where each form shortcode is used.
+* Feature  - New email added for send user approval link admin email.
+* Feature  - Limit by characters or words in Inout and Textarea Field.
+* Enhance  - Improve success message after registration.
+* Enhance  - Server side validation message shown in respective fields.
+* Enhance  - Redirection to external url through logout_redirect shortcode attribute.
+* Dev      - Compatibility for form restriction addon.
+* Dev      - Remove no priv ajax request for form save action.
+* Dev      - Added hook to handle redirect url after auto login.
+* Dev      - Introduced hook to modify parse value for form data.
+* Fix      - Critical error while exporting user.
+* Fix      - The all_fields smart tag parse to a table.
+* Fix      - My account endpoint slug translation issue.
+* Fix      - Install user registration pages button not working.
+* Fix      - Assign role conditionally not working in multisite.
+* Fix      - Translation issue with successfull email verified message.
+
+= 3.1.1    - 10/11/2023
+* Tweak    - Dashboard content made accessible through action hook.
+* Tweak    - Compatibility with newly introduced ThemeGrill Agency Plan.
+* Tweak    - Conversational Forms addon details added in extension page.
+* Tweak    - Added action hook to handle functionalites after form duplication.
+* Dev      - Properly parse and send username in ajax response of form submit.
+* Fix      - Lock on the one time draggable field not removed while removing the field.
+
+= 3.1.0    - 13/10/2023
+* Refactor - Handle user approval status properly.
+* Feature  - Test captcha from settings.
+* Feature  - Profile details updated email to user.
+* Feature  - Edit form button in form preview window.
+* Feature  - User Registration menu added in admin menu bar.
+* Enhance  - Error logging mechanism in status menu.
+* Enhance  - Remember and retrieve the collapse state of settings menu.
+* Enhance  - Accept page slug as redirect_url parameter value in login or my account shortcode.
+* Dev      - Compatibility for custom captcha field.
+* Dev      - Compatibility for custom user listing area.
+* Dev      - Compatibility for Conversational Forms addon.
+* Dev      - Introduced new hooks to modify email header.
+* Dev      - Merge two duplicate methods on form validation.
+* Dev      - jQuery validation library updated to latest version.
+* Dev      - Compatibility for the fix of Lock addon field if integration not set.
+* Dev      - Compatibility for form fields integration on woo commerce product page.
+* Tweak    - Save the user IP on the user meta.
+* Tweak    - Onboarding last page design changes.
+* Tweak    - Add filter to change profile picture upload directory.
+* Fix      - Admin email not being delivered.
+* Fix      - Wrong escaping done in redirect_url parameter.
+* Fix      - Grammatical typo for unique validation message.
+* Fix      - Send password reset not working on prevent core login.
+* Fix      - Select All button not working while adding endpoints as menu.
+* Fix      - WPML compatibilty for validation message for duplicate added.
+* Fix      - Delete profile picture file from directory when removed while updating profile.
+
+= 3.0.4    - 04/09/2023
+* Feature  - Cloudflare turnstile captcha integration.
+* Enhance  - Login forms menu to show the login form shortcode.
+* Enhance  - Custom hold time before redirection after registration.
+* Dev      - Modified function that parses my account page id.
+* Dev      - Compatibility for pattern validation for input fields.
+* Dev      - Compatibility for enabling/disabling taking picture from the webcam.
+* Fix      - Incorrect filtering of pending users.
+* Fix      - Reset Password link throws invalid key.
+* Fix      - Remove other plugins notice in settings area.
+* Fix      - Conditionally hidden fields value being submitted.
+* Fix      - Copied tooltip not being shown when shortcode is copied.
+
+= 3.0.3    - 11/08/2023
+* Feature  - Email Preview.
+* Feature  - User registered language with smart tag.
+* Enhance  - Wrap emails in default template while previewing or sending.
+* Dev 	   - Check null for file_exits function.
+* Dev 	   - Change mail header format to array.
+* Dev 	   - Add Extra parameter in the filter hook user_registration_before_insert_user.
+* Tweak    - Added unique id smart tag.
+* Tweak    - Add filter to modify smart tag content.
+* Tweak    - Input box highlighting according to error or validity of form field input.
+* Fix      - Conflict with TranslatePress.
+* Fix  	   - Typecasting issue in myaccount tag state.
+* Fix 	   - Make login shortcode compatible with all editors.
+* Fix      - Lost Password not working for translated myaccount page.
+* Fix 	   - Form created even if its canceled in form naming area after choosing a template.
+* Fix 	   - Form set redirection working while trying to visit page with registration or login form after login.
+
+= 3.0.2.1  - 04/07/2023
+* Fix      - Arbitrary file upload.
+
+= 3.0.2    - 29/06/2023
+* Enhance  - One time draggable field locked message.
+* Tweak    - Filter added for recaptcha url.
+* Tweak    - Password strength meter hint text updated.
+* Tweak    - Apply redirection settings when autologin is set.
+* Fix      - Inconsistencies in v3.0 design update.
+* Fix      - Form design conflict with themes using bootstrap.
+* Fix      - Security Vulnerability issue from arbitrary file upload.
+* Fix      - Validation error thrown when range is used as payment field.
+* Fix      - Default values for global settings options cannot be changed.
+* Fix      - Required validation thrown when entering 0 in the number field.
+* Fix      - Max upload size option accepting non-numeric, negative, and 0 as values.
+
+= 3.0.1    - 14/06/2023
+* Dev      - Update duplicate hook name.
+* Dev      - Compatibility for autologin redirection.
+* Tweak    - Add new addons to extensions page.
+* Tweak    - Field smart tag support in hidden field value.
+* Tweak    - Create global constant for upload dir path and url.
+* Tweak    - Profile pic showing max upload size in KB instead of MB.
+* Fix      - Free plugin file not being deleted when pro is activated.
+* Fix      - Password strength meter not working with Cyrillic letters.
+* Fix      - Password preview not working on login shortcode page when recaptcha disabled.
+
+= 3.0      - 31/05/2023
+* Refactor - Form Builder Design.
+* Refactor - Global Settings Design.
+* Refactor - Login process.
+* Feature  - Search global settings.
+* Enhance  - Redirection after registration.
+* Enhance  - Password strength check made more robust.
+* Enhance  - Changed checkbox and yes/no select option to toggle.
+* Enhance  - New smart tags added in email content and default value of fields.
+* Dev 	   - Compatibility for hidden field.
+* Dev      - Compatibility for Discounted Price.
+* Dev      - Compatibility for Profile Completeness addon.
+* Dev 	   - Compatibility for conditionally hide/show submit button.
+* Dev      - Compatibility for disable cropping in profile picture field.
+* Tweak    - Display info about form status.
+* Fix      - Remember me not working for ajax login.
+* Fix      - Validation error when conditionally hide fields.
+* Fix      - Email confirmation email not being sent when all emails were disabled.
+
+= 2.3.5    - 04/05/2023
+* Refactor - Make get_sanitize_value function static.
+* Tweak    - PHP deprecation notice for sites below PHP 7.2.
+* Fix      - Password not matched when apostrophes used.
+* Fix      - Form being saved when captcha is enabled but keys are missing.
+* Fix      - Settings being saved when captcha is enabled in login options but keys are missing.
+
+= 2.3.4    - 26/04/2023
+* Feature  - Smart tag selector in email content.
+* Feature  - Smart tag selector in default value of fields.
+* Tweak    - Add hook to handle required fields.
+* Tweak    - Add filter hook before inserting user.
+* Tweak    - Add filter hook to remember autologin users.
+* Tweak    - Enable description message changed for reset password email.
+* Tweak    - Form field upgrade to premium notices according to license plan.
+* Fix      - Validation error when radio field empty.
+* Fix      - Polylang My Account Page Translation issue.
+* Fix      - Deprecated get_sanitize-value causing issues.
+* Fix      - Date field error when using dd/mm/yyyy format.
+* Fix      - Profile picture not recognized by media library.
+* Fix      - Advance Settings custom class not working on edit-profile.
+* Fix 	   - Token mismatch error and wrong password message appearing at same time.
+* Fix      - Incorrect default date displayed in date field while editing user in admin side.
+
+= 2.3.3.1  - 17/03/2023
+* Fix      - Email confirmation email not sent to user.
+
+= 2.3.3    - 16/03/2023
+* Refactor - Backend validation for form data.
+* Enhance  - Global settings input validation.
+* Enhance  - Confirm password and confirm email field validation.
+* Tweak    - Add Docs link in My Account select notice.
+* Tweak    - Add action hook added for email address change confirmation success.
+* Fix      - Required icon not displaying properly.
+* Fix      - Default value for country field not working.
+* Fix      - Strip Unwanted fields from conditional rules.
+* Fix      - Profile picture required issue in edit profile.
+* Fix      - Year not displayed on min max date field option.
+* Fix      - First item being selected by default in edit profile.
+* Fix      - Single item field error message displaying in wrong place.
+* Fix      - reCAPTCHA registration form template don't create reCAPTCHA.
+* Fix      - Role based redirect after logout not working for custom template.
+* Fix      - Email not send to user when login option set except email confirmation.
+* Fix      - Security issue send test email by non privileged user.
+* Fix      - Security issue PHP Object injection with unserialize PHP core function.
+
+= 2.3.2.1  - 23/02/2023
+* Fix 	   - Consent notice is now dismissable.
+* Fix      - Form preview not working properly when astra theme activated.
+* Fix      - Error while submitting form with file upload field when OpenSSL extension disabled.
+
+= 2.3.2    - 20/02/2023
+* Feature  - Shortcode for 'Change Password' Page.
+* Feature  - Email confirmation for email change on the edit profile page.
+* Refactor - Profile Picture save after profile update.
+* Enhance  - Setup wizard options and design.
+* Enhance  - Bulk form import/export.
+* Enhance  - Add {{user_roles}} smart tag.
+* Enhance  - View form link after importing form.
+* Enhance  - Fetch Form templates from remote server.
+* Enhance  - Send success email after email confirmation done by user.
+* Enhance  - Add toggle to enable/disable email from email list in global settings.
+* Dev      - Common code for Select2.
+* Dev      - Common js for preview password icon.
+* Dev      - Return login url from ur_get_my_account_url function if My Account is not set.
+* Tweak    - Deactivation popup.
+* Tweak    - Add Private notes in extension page.
+* Tweak    - Field option made clickable when no any field is selected.
+* Fix      - TinyMce data not saving issue.
+* Fix      - Smart tag in email issue for file type.
+* Fix      - Field Visibility Setting value not saving in safari.
+* Fix      - MyAccount redirection issue on plain permalink structure.
+* Fix      - Reset and incorrect password message appears at same time.
+* Fix 	   - Preview password icon not working when reCAPTCHA is enabled.
+
+= 2.3.1    - 17/01/2023
+* Enhance  - Fetch Form templates from remote server.
+* Fix 	   - XSS vulnerability in field settings.
+* Fix 	   - Flatpickr throwing an error in console.
+* Fix 	   - LearnDash slug typo in extemsions page.
+* Fix      - Disallow Reset Password for not approved users.
+* Fix 	   - Profile picture being removed while updating profile.
+* Fix      - Invalid argument warning while fetching form settings.
+* Fix      - Registration form id with which user is registered referenced in edit profile form.
+
+= 2.3.0    - 02/01/2023
+* Feature  - CAPTCHA verification on lost password page.​
+* Dev      - Add hook to hold success message before redirect.
+* Dev      - Add functions to get login and my account page urls.
+* Tweak    - New addons in extensions page.​
+* Tweak    - Delete popup modal layout size changes.​
+* Tweak    - Add UR tag for selected my account page.​
+* Tweak    - Collapse accordion by default except general in form builder. ​
+* Tweak    - Submit Button Class, Text, Form Class label and tooltip text changes.​
+* Fix      - PHP 8.1 Compatibility issue​s.
+* Fix      - Forms table sorting by latest update.​
+* Fix      - Form Id empty issue in getting started page.​
+* Fix      - Misplaced error message for url fields.​
+* Fix      - Field not appended in the droppable zone.​
+* Fix      - Errors and warnings in the browser console.​
+* Fix      - Show Password icon for Extra Password field.​
+* Fix      - Smart tag for country field in email content.
+* Fix      - My Account endpoint translation issue in WPML.​
+* Fix      - Gutenberg compatibility issue with my account.
+* Fix      - User export issue when form name has special characters.​
+* Fix      - User export issue while checkbox or multi-select2 exists.​
+* Fix      - Form not submitting issue while captcha keys are not set.​
+* Fix      - Form submitting when error message exists for file upload.
+* Fix      - Special Character in Password Field caused invalid password while login.​
+* Fix      - 'Special Character Validation in Username' and 'Unknown Email' messages not customized properly.​
+
+= 2.2.6    - 01/12/2022
+* Fix      - Critical error while updating user details by admin.
+* Fix      - Form export issue when the form name has special characters.
+* Fix      - Getting Started Page now works properly in local environment.
+* Fix      - User profile picture design issue in dashboard of my account page.
+* Fix      - Convert email verification plain text to link in the confirmation email.
+* Fix      - My Account selection notice keep appearing when group block enabled in the page.
+* Dev      - UR Logger function called incorrectly.
+* Tweak    - Renamed hCaptcha according to brand name.​
+
+= 2.2.5    - 22/11/2022
+* Fix      - User Registration string translation issue.
+* Fix      - Auto approving users even when admin approval was enabled.
+* Fix      - Default role set to administrator after getting started end.
+* Fix      - Critical error while approving or updating user details by admin.
+* Fix      - Replace str_contains with strpos for compatibility below php version 8.
+* Fix      - Upgrade plan button in extensions page even when license was activated.
+* Dev      - Added trigger before redirect to another page after registration in JS.
+
+= 2.2.4.1  - 14/11/2022
+* Fix      - Security issue in profile picture upload.
+* Tweak    - Parse user extra information according to form fields order.
+
+= 2.2.4    - 10/11/2022
+* Feature  - Form Templates.
+* Enhance  - Support links on the checkbox field option.
+* Dev      - Stripe Addon Refactor Compatibility.
+* Dev      - Two Factor Authentication Addon Compatibility.
+* Tweak    - Add page state for user registration my account page.
+* Fix      - Localize reCAPTCHA script conditionally.
+* Fix      - Date not fetched in proper format in admin edit profile.
+* Fix      - Undefined index version while entering and activating license.
+* Fix      - Disable Default WordPress Login Screen not working on custom login page.
+* Fix      - WooCommerce password strength meter conflicting with reset password page.
+
+= 2.2.3    - 27/09/2022
+* Enhance  - Delete forms when plugin uninstalled. ​
+* Tweak    - Install pages notice when onboarding skipped​.
+* Tweak    - Display notice to select my account page in settings.​
+* Tweak    - Change text typo and grammatical mistake in settings labels.​
+* Dev      - Function to get all form fields added.​
+* Dev      - Trigger added for field removal in JS.​
+* Dev      - Trigger added for handling field error messages.​
+* Fix      - Number field accepting text inputs.​
+* Fix      - Tooltip not properly displayed in form settings.​
+* Fix      - My Account vertical layout nav width responsiveness.​
+* Fix      - Required field issue in edit profile when field is conditionally hidden.​
+* Fix      - One time draggable fields inside a row not reinitialized after deleting it.​
+* Fix      - User with email confirmed but not approved by admin are not shown as pending in users table.
+
+= 2.2.2    - 06/09/2022
+* Enhance  - Parse smart tag values in appropriate format to display​.
+* Refactor - Remove field icon code.​
+* Refactor - Replace jQuery tiptip with Tooltipster for tooltip​.
+* Tweak    - Double quoted main font family ignored by browsers.​
+* Tweak    - Replace incremental file name function with WordPress default.​
+* Tweak    - Revert content overrider not saving code back to old working one.​
+* Tweak    - Settings option label made consistent​.
+* Fix 	   - Flatpickr localization issue.
+* Fix 	   - File type valid value format.​
+* Fix 	   - Select All option translation issue.​
+* Fix 	   - Conditional Logic enabled required field issue. ​
+* Fix 	   - Invalid argument error in foreach when updating pro.​
+* Fix 	   - Redirection after registration not working with block.​
+* Fix 	   - Error thrown when uploaded file is not found in upload directory.​
+* Fix      - Ajax Submission not working in edit profile when required field empty.
+* Fix 	   - Lost password not working when no default account page with forgot password endpoint​.
+
+= 2.2.1    - 28/07/2022
+* Enhance  - Display Keyboard Shortcuts Popup when (Ctrl + H) is pressed.
+* Enhance  - Toggle introduced in metabox settings.
+* Tweak    - Added trigger after edit profile ajax submission.
+* Dev      - Replace str_contains with strpos in settings title capitalization function.
+* Fix      - Quick Links Content Toggle Issue.
+* Fix      - Remove whitespace before form fields.
+* Fix      - Form Field icon issue in firefox browser.
+* Fix      - Undefined index field_name in country field.
+* Fix      - Date Range not accepting end date in access rule.
+* Fix      - Required option value for field not rendered dynamically in form builder.
+* Fix      - File upload path permission denied due to no existence of file directory.
+
+= 2.2.0    - 14/07/2022
+* Feature  - Approve User via Email Token Link​
+* Refactor - Settings title, options and tooltips typos change. ​
+* Refactor - Added new Misc settings tab for all advanced global settings.
+* Tweak    - Added missing translations.​
+* Tweak    - Make translatable Registration URL on Login form.​
+* Dev      - Hook after user meta update.​
+* Dev      - Validate unique field compatibility​
+* Dev      - Date format filter for registered log in users table.​
+* Fix      - Plugin path with invalid slashes.​
+* Fix      - Profile Picture removed when profile updated.​
+* Fix      - Email templates content overrider texts not saving.​
+* Fix      - Undefined Std::class $plugin in add new plugin page.
+* Fix      - Undefined Std::class $version in view details action.
+* Fix      - View details link in plugins row action broken for addons.​
+
+
+= 2.1.8    - 08/06/2022
+* Feature  - Native date Field.
+* Enhance  - Profile Picture and File Upload to different folder.
+* Dev      - Social connect with login option.
+* Dev      - Proper escaping on left out htmls.
+* Dev      - Hook for notice in registration form.
+* Dev      - Hook for customize edit profile fields.
+* Dev      - Filter hook for admin action redirect in users section.
+* Tweak    - Filter to change lost password page button text.
+* Tweak    - Remove Add User Registration Form button from wp-editor in URCMA settings.
+* Fix      - Popup issue with wpcover block.
+* Fix      - Learndash login conflict with prevent core login feature.
+* Fix      - Country field value issue in edit profile when placeholder is set.
+
+= 2.1.7    - 29/04/2022
+* Tweak    - Country full name in smart tags.
+* Fix 	   - Lost password when no account page.
+* Fix 	   - Multiple form invisible recaptcha issue.
+* Fix 	   - Lost password functionality in multisite.
+* Fix      - Wrong label of save changes button in settings.
+* Fix      - Bypass prevent core reset password on multisite.
+* Fix 	   - Wrong sanitization for valid extensions in profile pic.
+
+= 2.1.6    - 20/04/2022
+* Enhance  - Active status on emails settings.
+* Enhance  - Keyboard shortcut in form builder.
+* Dev      - Geolocation auto complete address and map compatibility.
+* Dev      - PDF toggle, image upload, image choice and radio choice settings compatibility.
+* Dev      - Incorrect password error message handled and filter added when ajax login enabled.
+* Tweak    - Ring Loader css added.
+* Tweak    - Elementor widget icon added.
+* Tweak    - Licences tab removed from settings tab of free version.
+* Fix 	   - Permission callback error in restapi.
+* Fix	   - Translation issue with user registration.
+* Fix 	   - Profile Pic upload issue from edit profile.
+* Fix 	   - ReCaptcha conflict with all in one seo plugin.
+* Fix 	   - Undefined index title in payment settings tab.
+* Fix 	   - Invalid argument supplied in admin settings file.
+* Fix 	   - Default reset password and myaccount design issue.
+* Fix 	   - Invalid email error message handled when ajax enabled.
+* Fix 	   - User status keep switching to pending only after admin approval from admin user list.
+
+= 2.1.5.1  - 14/03/2022
+* Fix 	   - Deploy script.
+
+= 2.1.5    - 14/03/2022
+* Feature  - Getting started page.
+* Fix      - My Account translation issue.
+* Fix      - Profile picture not being uploaded.
+* Fix      - No file uploaded error in edit profile.
+* Fix      - Twenty Twenty Two theme form preview issue.
+* Fix      - Select value not shown when placeholder is set in edit profile.
+* Fix      - Empty email field after profile updates when field visibility set to readonly.
+
+= 2.1.4.2  - 04/03/2022
+* Fix      - Conditional assign role not working.
+* Fix      - Inline email content on save.
+* Fix      - Conditional logic not working.
+* Fix      - Multi select2 value not being saved in edit profile.
+* Fix      - Multiple profile updated email to admin.
+
+= 2.1.4.1  - 02/03/2022
+* Fix      - ReCaptcha backward compatibility issue.
+
+= 2.1.4    - 01/03/2022
+* Feature  - hCaptcha integration.
+* Feature  - ReCaptcha v2 invisible integration.
+* Enhance  - Threshold score handled in v3.
+* Dev 	   - PHPCS configuration for sanitization and escaping improvement.
+* Dev 	   - Compatibility with frontend listing.
+* Tweak    - Never show again and May be later button in notices.
+* Fix      - PHP 8.0 compatibility.
+* Fix      - Recaptcha script localization.
+* Fix      - Prevent dashboard access not working for all user roles.
+* Fix      - Margin issue on login form.
+* Fix      - Default value not set in multiple choice options in metaboxes.
+* Fix      - Input field size limit in edit profile.
+* Fix      - While sending test email sender option saved value is not showing instead wordpress core address.
+
+= 2.1.3    - 26/01/2022
+* Dev      - Combine two login option compatibility.
+* Dev      - Introduce hooks for save button in myaccount.
+* Fix      - Security and escaping issues.
+* Fix      - Cannot unhide labels.
+* Fix      - Profile picture remove, update and save on the edit profile page.
+* Fix      - File upload data not updated in profile details changed email.
+
+= 2.1.2    - 07/01/2022
+* Dev      - Hooks for custom advance setting.
+* Enhance  - Extension page design and addons installation.
+* Enhance  - Size limit on profile picture field in edit profile page.
+* Fix      - Escaping issue in deactivation notice.
+* Fix      - Resend verification not working when ajax login is enabled.
+
+= 2.1.1    - 31/12/2021
+* Fix 	   - Sanitization and escaping issues.
+* Tweak    - Images/JSON files locally added.
+
+= 2.1.0.1  - 16/12/2021
+* Dev 	   - Added filter hook for success message after email confirmation.
+* Tweak    - Upgrade to pro notice.
+
+= 2.1.0    - 13/12/2021
+* Dev      - User Regsitration Pro addon compatibility.
+* Dev 	   - Mailchimp Compatibility.
+* Fix 	   - Hook for myaccount enqueue script.
+* Fix 	   - User registration widgets in gutenberg.
+* Fix 	   - Logout url not working in gutenberg login page.
+
+= 2.0.5    - 15/11/2021
+* Enhance  - Allowed more HTML tags in description of field.
+* Enhance  - Login title missing in the Login form.
+* Fix      - Form settings preview not showing after editing form name.
+* Fix      - Prevent core login redirect to login page with different slug.
+* Fix      - Required and Hide Label issue in Safari Browser.
+* Fix      - Empty Form when html field used.
+
+= 2.0.4    - 19/10/2021
+* Enhance  - File and user status in export user csv.
+* Enhance  - Form builder validation.
+* Tweak    - Handle parse_block() before wp5.0.
+* Fix	   - Number field step issue.
+* Fix 	   - Prevent core login not working with classic editor.
+
+= 2.0.3    - 22/09/2021
+* Enhance  - User creation capability check while registering users.
+* Dev 	   - Multiple choice field compatibility.
+* Dev	   - Time Picker field compatibility.
+* Fix	   - Gutenberg block css issue.
+* Fix 	   - wp editor script enqueued incorrectly in widgets.
+
+= 2.0.2    - 01/09/2021
+* Fix 	   - Missing sanitization on profile picture url
+* Fix 	   - Choice field issue in edit profile.
+* Fix 	   - Prevent core login in gutenberg login form.
+* Fix 	   - Profile picture field issue in gutenberg my account.
+
+= 2.0.1    - 10/08/2021
+* Enhance  - Notice display method to display review and survey notice.
+* Dev      - Redirect URL string WPML compatibility.
+* Tweak    - Metabox and form icon design changes.
+* Fix      - Undefined index polylang language.
+
+= 2.0.0    - 02/08/2021
+* Feature  - Form field icons in user registration.
+* Feature  - Login with username, email or both option.
+* Enhance  - Select all option in multiple choice field.
+* Refactor - User Registration List table parsing.
+* Refactor - Settings page design and parsing.
+* Refactor - Metabox parsing from core.
+* Refactor - JS libraries.
+* Refactor - JS Codes.
+* Dev      - Introduce new filter hooks for profile update message.
+* Dev      - Introduce a new action to add extra validation to edit profile fields.
+* Fix      - Email updation issue in edit profile.
+* Fix      - Invite code visible in edit profile.
+* Fix      - String translation in edit profile.
+* Fix      - Class translation issue.
+* Fix      - Date field required validation.
+
+= 1.9.9   - 30/06/2021
+* Feature - Gutenberg block for login.
+* Feature - Send test email.
+* Tweak   - Add smart tag filter and content mapping.
+* Tweak   - Add filter for login redirect when core login is disabled.
+* Fix 	  - Auto login conflicts with payment.
+* Fix 	  - Hide label in edit profile for section title field.
+* Fix	  - Unexpected end of file in edit profile.
+
+= 1.9.8 - 31/05/2021
+* Feature - Edit profile form shortcode.
+* Enhance - Valid file type in my account profile picture.
+* Enhance - Reset Button in UR Form.
+* Enhance - Payment slider  in range field.
+* Tweak - Email exists check in edit profile.
+* Tweak - Redirection filter in ajax login.
+* Fix - My Account slug not translate via polylang plugin.
+* Fix - UR not working if dashboard language changed.
+* Fix - Recaptcha issue on login and registration shortcode page.
+
+= 1.9.7 - 28/04/2021
+* Feature - Login Form Using Ajax.
+* Feature - Disable profile picture in my account.
+* Enhance - Pending users approval banner.
+* Tweak   - Not allow old password in reset password.
+* Tweak	  - Global function for smart tag name_value parser.
+* Tweak   - Removed ReCaptcha secret key from localization.
+* Fix     - Disable login confirmation for socially connected users.
+* Fix 	  - Wpnonce in URL.
+
+= 1.9.6 - 06/04/2021
+* Enhance 	- Password strength meter in reset password page.
+* Enhance 	- Disallow special characters in username field.
+* Enhance 	- Review notice UI and contents.
+* Dev	  	- Frontend listing addon compatibility.
+* Dev	  	- iDEAL payment gateway compatibility.
+* Fix 		- Localization of password strength js params.
+* Fix 		- Disable logout confirmation issue with logout endpoint menu.
+* Fix 		- Reset password button not working.
+* Fix 		- Hide label in edit profile.
+
+= 1.9.5 - 15/03/2021
+* Enhance 	- Setting page header UI.
+* Dev	  	- MailerLite add-on compatibility.
+* Tweak 	- WordPress 5.7 compatibility.
+* Fix 		- WYSIWYG field value save and sanitization in edit-profile.
+* Fix 		- Email overrider undefined index issue.
+* Fix 		- Form Duplication issue with anchor tag.
+* Fix 		- Token mismatch issue.
+
+= 1.9.4.1 - 12/02/2021
+* Fix - Login button not working on pages with both registration and login forms.
+
+= 1.9.4 - 12/02/2021
+* Enhance - Limit username length.
+* Enhance - Limit Choice in checkbox field.
+* Enhance - Resend Verification Email to User from Admin.
+* Add - Filter to add new smart tags.
+* Dev - Learndash Compatibility.
+* Dev - Range field Compatibility.
+* Tweak - Woocommerce myaccount compatibility with prevent core login.
+* Fix - All In One SEO conflict with my account.
+
+= 1.9.3 - 12/01/2021
+* Feature 	- Success Message display position option.
+* Dev 		- Customizer compatibility in Customize My Account addon.
+* Dev 		- Add animation file.
+* Dev		- Add user-registration div in login form preview.
+* Fix 		- Radio, Select, and Checkbox option label and array index conflict.
+* Fix 		- Prevent core login option and save option conflict.
+* Fix 		- Email Header issue.
+
+= 1.9.2.1 - 15/12/2020
+* Fix - Submit button is not working when strong password enabled.
+
+= 1.9.2 - 10/12/2020
+* Fix - PerfectScrollbar initialization issue with WordPress 5.6.
+* Fix - Multiple File Upload field conflict.
+
+= 1.9.1 - 01/12/2020
+* Refactor - Grids and containers sass files.
+* Fix - Fatal error while resend verification link clicked.
+* Fix - Missing attachment for single file upload due to form-filler.
+* Fix - Export users fails due to form name with dash symbol.
+* Fix - Hide/Show password conflict with form reinitialization.
+* Fix - Scroll to first error message on form submit.
+
+= 1.9.0 - 18/11/2020
+* Feature - Email content override for Email Templates addon.
+* Enhance- Re-initialize form after full page load.
+* Enhance - Max upload size and valid file type settings value save and retrieve.
+* Dev - Zapier add-on compatibility.
+* Refactor - Admin popup UI.
+* Tweak - JS format changed.
+* Tweak - Hide unrelated admin notices from the settings page.
+* Tweak - Number field max, min, and step validation message override and made translatable.
+* Fix - Conditional logic not working in the WooCommerce checkout page.
+* Fix - Conditional Logic required fields conflict.
+* Fix - Conditional Logic in my account.
+* Fix - Grid layout design issue in the extension page.
+
+= 1.8.8 - 13/10/2020
+* Enhance - Hide signup link on login if users_can_register option is not enabled.
+* Fix - Number fields step option not working.
+* Fix - Send an email after payment validation.
+* Fix - Form List table bottom trash filter button not work.
+* Fix - Unexpected json > 0 error.
+* Tweak - Design changes in file upload of setting page.
+
+= 1.8.7.1 - 14/09/2020
+* Fix - Conditional logic compatibility with WordPress 5.5
+
+= 1.8.7 - 09/09/2020
+* Enhance - Filter Users with approval status and specific UR forms.
+* Enhance - Add placeholder option in the Date field.
+* Tweak - Choice field option value and default value change and update.
+* Tweak - Delete invite codes and mailchimp date from option table on uninstall.
+* Fix - Import/Export/Duplicate form not working while using html tags in description.
+* Fix - Date Field value disappears on user update by admin and woocommerce compatibility.
+* Fix - Ignore missing field validation based on field visibility settings.
+* Fix - Choice field and country field compatibility with WordPress 5.5
+* Fix - Disabled submit button on ReCaptcha fail.
+* Fix - My account endpoint URLs on the home page.
+* Fix - Registration not working on Internet Explorer browser.
+* Dev - Change date() to date_i18n() function and Timezone Compatibility.
+* Dev - Deprecate Everest Form Hook and introduce new hook instead.
+* Dev - Password Strength Meter compatibility with WordPress 5.5
+* Dev - Remove extra double quotes from checkbox fields label.
+
+= 1.8.6 - 11/08/2020
+* Enhance - Login form customization
+* Enhance - Introduce tooltips in Form Builder
+* Enhance - Copy icon on shortcode column in registration forms list table
+* Enhance - Option to disable logout confirmation
+* Tweak- Wordpress 5.5 Compatibility
+* Fix - Profile picture, file upload, mailchimp and smart phone field sync with woocommerce
+* Fix - ReCaptcha script loads in lost password page
+* Fix - Cannot auto scroll while dragging fields in the form builder
+* Fix - Required option and Hide Label option conflict
+* Fix - Reset password for other plugin registered users
+* Dev - SASS files
+
+= 1.8.5 - 13/07/2020
+* Feature- Ajax form submission on edit profile
+* Dev - Added OR Logic Gate in conditional logic.
+* Dev - User Registration Stripe Addon Compatibility.
+* Dev - User Registration Extras Addon Compatibility.
+* Dev - Content Restriction Access Rules.
+* Fix - Form Preview issue.
+* Fix - My account shortcode with Elementor.
+* Fix - User approval status change and filter.
+* Fix - Date field value disappearing from the Profile Details section.
+* Fix - UR script enqueued in non UR-Page.
+* Fix - WPML Compatibility in myaccount section.
+* Fix - Multiple forms load and submit.
+* Fix - wysiwyg field value update in admin profile edit.
+* Fix - Phone field country code submission.
+
+= 1.8.4 - 14/05/2020
+* Enhance - Add custom CSS class in fields.
+* Dev - MailChimp add-on compatibility changes.
+* Dev - File upload addon compatibility changes
+* Dev - Invite code add-on compatibility changes.
+* Fix - Display of new users count even after the all users page refresh
+* Fix - Enable/Disable checkbox backward compatibility
+* Fix - Elementor plugin nav menu title conflict.
+
+= 1.8.3 - 17/04/2020
+* Security - Form field validation for missing required fields.
+* Enhance - Toggle out on clicking out of form name edit box.
+* Enhance - Confirmation message on field deletion.
+* Enhance - Form live changes for conditional logic.
+* Enhance - Registered At column to display registered log.
+* Dev - WordPress v5.4 Compatibility.
+* Dev - WPML compatibility for Select2 and Multi Select2 fields.
+* Dev - Invite code compatibility with the conditional logic addon.
+* Fix - Section division issue in form builder.
+* Fix - Multiple date field.
+* Fix - User approval status.
+* Fix - Enable Recaptcha and password strength checkbox backward compatibility.
+* Fix - Placeholder conflict with the value of the select field.
+* Fix - User Registration component placeholder design on Gutenblock.
+* Fix - Form event submit conflict in presence of popup creator plugins.
+
+= 1.8.2.1 - 20/03/2020
+* Fix - Unable to Login User Due to Pending Status.
+* Fix - Recaptcha Backward compatibility
+
+= 1.8.2 - 18/03/2020
+* Feature - Search Field introduced in form builder.
+* Enhancement - Prevent Core Login enabled with redirect login page.
+* Enhancement - WPML on multiple choice options.
+* Refactor - Remove unnecessary CSS codes.
+* Tweak - Custom class in submit button.
+* Tweak - Password strength meter and password visibility enabled in change password.
+* Fix - User Approval status in Users Section.
+* Fix - Toggle option in field option's setting.
+* Fix - pre_get_users hook placement.
+* Fix - Password reset link validation.
+* Fix - Incompatibility with password fields of other registration plugins.
+
+= 1.8.1 - 13/02/2020
+* Fix - Fatal error while installing the plugin.
+* Fix - SweetAlert issue.
+
+= 1.8.0 - 13/02/2020
+* Feature - Login option introduced for individual forms.
+* Feature - Allows selective country selection in country field.
+* Enhancement - Date field
+* Enhancement - Conditional logic in edit profile.
+* Enhancement - Real time password matching.
+* Enhancement - Real time email matching.
+* Enhancement - Modal popup with documentation links on form creation.
+* Enhancement - Form settings dropdown changed to checkbox.
+* Enhancement - Premium fields showcase.
+* Tweak 	  - Toggle feature added for field option's setting.
+* Tweak		  - SweetAlert2 added in frontend.
+* Tweak		  - CDN styling swapped with local file.
+* Fix		  - Exclude unwanted fields in edit profile.
+* Fix		  - Broken reset password link.
+
+= 1.7.6 - 30/12/2019 =
+* Enhancement - Registered user source.
+* Tweak - Remove inline css from recaptcha.
+* Fix - Email attachment hook mismatch arguments.
+* Fix - wp_authenticate_user filter mismatch arguments.
+* Fix - Hide/show password enabled in edit profile.
+
+= 1.7.5 - 13/12/2019 =
+* Enhancement - Redirect URL after logout.
+* Enhancement - Password field eye icon.
+* Fix - Escaping attribute in checkbox field.
+* Fix - Remove admin notice from form builder.
+* Fix - Case sensitive in confirm password.
+* Fix - Invite code field name made non editable.
+
+= 1.7.4 - 21/11/2019 =
+* Feature - WPML Plugin Compatibility.
+* Tweak   - Country Field Default Value.
+* Tweak   - Icons alignment after update Wordpress v5.3.
+* Fix     - HTML field Form Duplication.
+
+= 1.7.3 - 04/10/2019 =
+* Fix - Form ID being empty.
+* Fix - Form ID check.
+* Fix - Field key not found in edit profile details.
+
+= 1.7.2 - 02/10/2019 =
+* Refactor - Has date field function.
+* Refactor - Check username function.
+* Tweak    - Button spinner.
+* Fix      - Exclude file upload field from export users.
+* Fix      - Remove the Password field from excluding.
+* Fix      - Exclude Confirm Email field from edit profile.
+* Fix      - Undefined error on label hidden.
+* Fix      - Grid toggle text.
+* Fix      - Email address vaidation.
+* Fix      - Heartbeat start on Document ready.
+* Add      - Styles for table caption.
+* Dev      - Introducing get_form function.
+
+= 1.7.1 - 13/09/2019 =
+* Fix - Password Validation Message.
+* Fix - Password strength error message translation issue.
+* Fix - Smart Tag issue while sending the email.
+* Fix - Double click on form submit button.
+* Fix - Submit button hidden in IE.
+* Fix - Blink on the grid hover.
+
+= 1.7.0 - 05/09/2019 =
+* Feature - Live new user registration notice and badge.
+* Feature - Import/Export registration form in JSON format.
+* Feature - Shortcut to save form ( Ctrl + s ).
+* Tweak   - Form name edit position change.
+* Tweak   - UI enhancement for full-screen mode.
+* Tweak   - Input field box design on the builder.
+* Tweak   - Brand logo add in the builder.
+* Tweak   - Header design enhancement on the builder.
+* Tweak   - Remove footer save button.
+* Tweak   - Remove builder reload on save.
+* Tweak   - Form builder pre-loader.
+* Tweak   - Setting tab design.
+* Tweak   - Form fields design.
+* Tweak   - Overall form builder design
+* Tweak   - Add row button color adjustment.
+* Tweak   - Field description placement below the input in front-end.
+* Tweak   - Success and Error messages.
+* Tweak   - Fields Icon change.
+* Tweak   - SweetAlert2 confirmation and alert box.
+* Fix     - Manage draggable user fields on row delete.
+* Add     - Perfect Scrollbar in the builder.
+* Add     - New Smarttag ( {{ur_login}} ).
+* Dev     - Action hook in form builder footer wrapper.
+* Dev     - Action hook after form save.
+* Dev     - Filter hooks before and after form fields.
+* Dev     - Filter before and after field row.
+* Dev     - Add and Delete row JS events.
+* Dev     - Color picker field in form setting.
+* Dev     - Bool to string and vise Versa formatting add.
+
+= 1.6.3 - 19/08/2019 =
+* Enhancement - Send Email to Admin when user changes their profile details.
+* Feature     - Fullscreen builder mode.
+* Tweak       - Template file update to locate add-ons file
+* Add         - Accept redirect_to get parameter in login page.
+* Fix         - Password strength error message not showing.
+* Fix         - Profile picture in my account dashboard.
+* Fix         - Profile picture save without selecting any file.
+* Fix         - Prevent empty search query.
+* Fix         - Email format issue.
+* Dev         - Hook to filter form data in profile details.
+
+= 1.6.2 - 09/07/2019 =
+* Enhancement - Profile picture upload to browser upload.
+* Tweak       - Enqueue scripts.
+* Fix         - Menu Items invalid arguments.
+* Fix         - Log delete on reload.
+
+= 1.6.1 - 04/06/2019 =
+* Feature - Two Column Login and Registration Form.
+* Tweak   - Secondary button design.
+* Tweak   - Button status on hover, foucs and active.
+* Fix     - Remove escaping in redirect url.
+* Fix     - Lost Password Email from header.
+* Fix     - json_decode error on user profile.
+* Fix     - Admin can register user.
+* Fix     - UI Dragging.
+* Fix     - Field option selection in builder after field deleted.
+* Fix     - Sub menu UI.
+
+= 1.6.0.1 - 08/05/2019 =
+* Fix - Form wise redirection
+
+= 1.6.0 - 05/07/2019 =
+* Feature - Form Wise Redirection.
+* Feature - Added Number field's Min, Max & Step attribute option along with Custom CSS option.
+* Tweak   - Introducing new User Registration Brand Logo change.
+* Tweak   - Gravatar message in Edit Profile page hide when selected Custom Picture.
+* Tweak   - On Prevent Core Login option enabled redirect Administrator to Dashboard.
+* Tweak   - Setting page's sub-menu design change.
+* Tweak   - Edit profile in My Account page field structure.
+* Tweak   - My Account page design change.
+* Tweak   - Conditional Logic Option design change in Field option.
+* Add     - Form Preview Button.
+* Add     - Hide and Show Password button in Login page.
+* Add     - Introducing Email Confirmation field.
+* Fix     - Undefined index found_avatar in Gravatar.
+* Fix     - Registration form submission Undefined error.
+* Fix     - KeepAlive issue in Copy Shortcode button.
+* Fix     - Lost Password Endpoint conflict.
+* Fix     - Max Length for input field.
+
+= 1.5.10 - 04/05/2019 =
+* Feature - Prevent Core Login and Registration page.
+* Feature - Custom css fields for default fields.
+* Fix - Prevent Dashboard access issue for multiple user roles.
+* Fix - Target blank in anchor tag issue.
+* Dev - Filter hook to modify form fields.
+* Dev - Filter hook to be used in new setting type.
+* Tweak - Bypass validation for read-only fields.
+
+= 1.5.9 - 03/28/2019 =
+* Fix - Profile picture not displaying in My account page.
+* Tweak - Dashboard Widget data fetch through Ajax request.
+* Dev - Filter hook added to hide current password in edit profile page.
+* Dev - Filter hook added to bypass current password validation and check in form handler.
+
+= 1.5.8.1 - 03/04/2019 =
+* Fix - Update user meta profile_pic_id and prefix change on review notice
+
+= 1.5.8 - 02/15/2018 =
+* Feature - Custom profile picture upload on account profile and admin profile.
+* Feature - Dashboard widget for users activity.
+* Feature - Default value for country field.
+* Feature - Option to delete user registration data on plugin deletion.
+* Feature - Password strenght meter on lost password and change password form.
+* Add     - Admin notice to leave review on wp.org
+* Add     - Scroll to error message due to minimum password strength.
+* Remove  - Caching prevention after header sent. Should've been as earlier as wp hook.
+
+= 1.5.7 - 02/05/2018 =
+* Refactor - Options for select, checkbox and radio field.
+* Add - Placeholder for select and country field.
+* Add - Cache helper class for flushing cache on user registration form.
+* Fix - Confirmaction of export/erase personal data from custom login form.
+* Fix - Privacy policy made required by default.
+* Fix - Formatting of form title display.
+* Fix - Validate for same email as password.
+* Dev - Action hook for enqueuing scripts.
+
+= 1.5.6 - 11/01/2018 =
+* Fix - Authenticated XSS
+* Fix - Smart tag bug on resend confirmation email
+
+= 1.5.5 - 07/01/2018 =
+* Fix - Data display for input fields on users profile
+* Tweak - Disable input fields on builder panel
+* Tweak - Beautify accordion on fields section
+
+= 1.5.4 - 02/01/2018 =
+* Fix - Smart tag for reset password email
+* Fix - Date field in user profile
+* Tweak - Message for lost password while awaiting admin approval
+* Dev - Filter to override success/failure response
+* Dev - Filter to override user role
+* Dev - Filter to update settings on settings page
+
+= 1.5.3 - 07/12/2018 =
+* Tweak - Conditionally load flatpickr if only form has date field.
+* Fix   - Load block editor CSS with proper hook
+
+= 1.5.2 - 28/11/2018 =
+* Fix - Remove cursor not allowed CSS for flat template
+
+= 1.5.1 - 27/11/2018 =
+* Add - Gutenberg form selection block
+* Add - Redirect option on registration page for logged in users
+* Add - Hooks for form custom class and before user registration form
+* Fix - Redirect after login issue on page builders and widgets
+* Fix - Server side validation for google reCaptcha
+* Fix - Empty error messages if exists form backend validation
+* Fix - Multiple occurrence of similar message after form submission
+* Fix - Required field naming readability on backend form submit
+* Fix - Translated error message issue on form submit
+* Fix - CSV export issue due to already sent headers
+* Tweak - Display (previously hidden) Option to insert myaccount page on settings
+* Tweak - Remove applied filter to change lost password url on admin side
+* Tweak - Redirect option from myaccount shortcode too
+
+= 1.5.0 - 30/10/2018 =
+* Feature - CSV Export of user data
+* Feature - Customizable minimum password strength
+* Add - Privacy policy text
+* Add - Smart tags for status change emails
+* Fix - Passwords including characters such as apostrophe (')
+* Fix - Email header including line break
+* Fix - Load FlatPickr on mobile devices too
+* Fix - File link to the email using smart tag
+
+= 1.4.9 - 11/10/2018 =
+* Fix - Escape attributes on conditional rules
+
+= 1.4.8 - 09/10/2018 =
+* Fix - Default reCaptcha checked on login settings
+* Fix - Deactivation notice on certain conditions
+* Fix - Multiselect support on form settings
+* Tweak - Formwise settings save format
+
+= 1.4.7 - 20/09/2018 =
+* Feature - Google reCaptcha on login form
+* Feature - Templates for login form
+* Feature - Enable/Disable remember me and lost password
+* Add - Filter to process smart tags
+* Tweak - Move login related settings from general to login options
+
+= 1.4.6 - 31/08/2018 =
+* Fix - Remove filter to avoid plugin conflict while sending emails
+* Fix - Load assests correctly
+* Fix - Remove backend required valiation if the field is hidden by condition
+
+= 1.4.5 - 20/08/2018 =
+* Fix - Load user registration assets on login page.
+* Tweak - Form settings UI
+* Tweak - Hide other admin notices on builder panel
+
+= 1.4.4 - 10/08/2018 =
+* Add - Hook to filter form settings
+* Add - Hook to filter success params after registration
+* Add - Action hook after user extra information on admin profile
+* Add - Input mask saving option
+* Fix - Conditionally load assets only on user registration pages
+* Fix - Fatal error while resending token
+* Fix - Tooltip on checkboxes
+* Fix - Error message during form submission
+* Fix - Send emails depending on different login options
+* Fix - Privacy Policy on profile details tab
+* Fix - Reset WooCommerce state value
+* Fix - Allow target attribute in description to add link
+
+= 1.4.3 - 31/07/2018 =
+* Feature - Copy form shortcode
+* Add - Deactivation feedback notice
+* Change - Date picker to flatpickr
+* Add - Email attachement filter
+
+= 1.4.2 - 11/07/2018 =
+* Feature - Gravatar on user profile
+* Feature - Layout(vertical/horizontal) on user account
+* Feature - Verify/Unverify user by admin in email confirmation
+* Refactor - Change account details tab to change password
+* Add - Necessary changes required for conditional logic
+* Fix - Broken resend verification email link
+* Fix - Exclude placeholder for unnecessary fields
+* Fix - Single checkbox update issue from admin profile
+
+= 1.4.1 - 20/06/2018 =
+* Fix - Privacy policy field issue
+* Fix - Translation ready texts
+* Fix - Lost password url
+* Add - Scroll bar for overflow form fields
+
+= 1.4.0 - 12/06/2018 =
+* Refactor - Form fields
+* Remove - Repeated settings from global
+* Feature - Custom validation error messages
+* Feature - Cutomizable/multiple admin emails
+* Feature - Custom class for registration form
+* Feature - Smart tags to email every form field filled
+* Feature - Display email status column in users tab for email confirmation
+* Fix - Display reCaptcha node only if enabled
+* Deprecate - Functions my_simple_crypt() and getToken()
+
+= 1.3.1 - 23/05/2018 =
+* Feature - Extend Data Export/Erasure tool to export/erase user extra information
+* Fix - Translation ready email contents
+* Fix - Apply filters to strip countries list
+
+= 1.3.0 - 11/05/2018 =
+* Refactor - user_password field for mod security reason
+* Refactor - Meta keys matching to wordpress
+* Feature - Cutomizable reset password email
+* Feature - Deafult user fields on profile tab in my account section
+* Fix - Redirect via template_redirect hook removing js redirection
+* Add - Filter hooks for every email classes
+
+= 1.2.5.1 - 27/04/2018 =
+* Tweak - Text color of paragraph in myaccount section
+* Fix - Use template_redirect hook instead to check verification token
+
+= 1.2.5 - 19/04/2018 =
+* Fix - Default meta keys issue
+* Refactor - Default user meta keys migration
+
+= 1.2.4 - 12/04/2018 =
+* Feature - Introduce jquery validate for client side validation
+* Feature - Allow user to resend email verification link
+* Fix - Manually created user requiring verification issue
+* Fix - Get form data by key issue
+* Fix - Console errors in the backend
+
+= 1.2.3 - 06/04/2018 =
+* Fix - undefined index error in frontend
+
+= 1.2.2 - 06/04/2018 =
+* Feature - Registration without username option
+* Feature - Customizable form submission messages
+* Feature - Hide label option in each field
+* Feature - Description box for each field
+* Fix - Date rendering issue
+* Tweak - Remove login header from login shortcode
+
+= 1.2.1 - 16/03/2018 =
+* Feature - Pending users approval notice for admin
+* Feature - Form filled data in email
+* Fix - Pending email issue
+* Fix - Redirect from email url to default login message issue
+* Fix - Load email classes only on demand
+
+
+= 1.2.0 - 22/02/2018 =
+* Fix - Design issue in mobile view.
+* Fix - Missing closing anchor tag.
+* Fix - Remove email token after use.
+* Fix - Store radio field value properly.
+* Fix - Console DOM error for checkbox field.
+* Feature - Redirect to custom page via email.
+* Refactor - Usermeta data store process.
+
+= 1.1.8 - 02/02/2018 =
+* Fix - Default admin email subject
+
+= 1.1.7 - 02/02/2018 =
+* Feature - Email Customizer
+* Fix - Broken dependencies on scripts
+* Fix - Fix fatal error in PHP version < 5.5
+* Fix - Json unescaped unicode
+
+= 1.1.6 - 10/01/2018 =
+* Feature - Privacy Policy checkbox field added
+* Feature - Radio button field added
+* Fix - Welcome message reappearing issue
+* Fix - User data deletion on uninstall
+* Fix - Undefined function call ur_get_notices
+* Fix - Shortcode issue with elementor
+
+= 1.1.5 - 03/12/2017 =
+* Feature - Introduced Checkbox form field
+* Feature - Email confirmation option for login
+* Feature - Disable Email option
+* Fix - Select box issue in user profile
+* Fix - Shortcode content appearing on top
+* Fix - Administrator status set to pending in admin approval
+
+= 1.1.3 - 17/10/2017 =
+* Fix - Login shortcode required parameter issue resolved.
+
+= 1.1.2 - 16/10/2017 =
+* Feature - New shortcode for login [user_registration_login]
+* Feature - 2 More template added for user registration form
+* Feature - WordPress rating link on user registration admin section
+* Fix - Disable profile detail tab (if there is no data) on user dashboard
+* Fix - form design improvement
+* Fix - Escaping issue of form builder
+* Fix - Datepicker issue on safari ( added new jquery datepicker)
+* Fix - Email message formatting
+
+= 1.1.1 - 03/10/2017 =
+* Fix - Denied email trigger fixed
+
+= 1.1.0 - 19/09/2017 =
+* Feature - Redirect URL
+* Feature - Number and date field added
+* Feature -  logger added
+* Feature - Formwise template
+* Fix - Frontend form javascript validation issue fixed
+* Fix - My account tab issue fixed
+* Deprecated -  Administrator from prevent dashboard access
+* Added some filter and action hooks
+
+= 1.0.4 - 31/08/2017 =
+* Admin approval after registration feature
+* Added new filter and action hooks for addon
+* Fixed frontpage registration form issue
+* Anyone can register issue fixed
+
+= 1.0.3 - 21/08/2017 =
+* Form duplicate option
+* Auto login after registration feature
+* Added some filter for addon
+
+= 1.0.2 - 04/08/2017 =
+* Email notification to user and admin
+* Some frontend form design fixes
+* On enter save form setting added on backend
+
+
+= 1.0.1 - 13/07/2017 =
+* Tweak - Add RTL support for activation notice.
+* Formwise setting functionality
+* Google Recaptcha on every form
+
+= 1.0.0 - 06/07/2017 =
+* Initial Public Release

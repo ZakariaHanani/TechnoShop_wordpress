@@ -1,0 +1,597 @@
+# Copyright (C) 2024 Ultimate Member
+# This file is distributed under the same license as the Ultimate Member - reCAPTCHA plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Member - reCAPTCHA 2.3.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/recaptcha\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-19T10:41:46+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: um-recaptcha\n"
+
+#. Plugin Name of the plugin
+#: um-recaptcha.php
+msgid "Ultimate Member - reCAPTCHA"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: um-recaptcha.php
+msgid "https://ultimatemember.com/extensions/google-recaptcha/"
+msgstr ""
+
+#. Description of the plugin
+#: um-recaptcha.php
+msgid "Protect your website from spam and integrate Google reCAPTCHA into your Ultimate Member forms"
+msgstr ""
+
+#. Author of the plugin
+#: um-recaptcha.php
+msgid "Ultimate Member"
+msgstr ""
+
+#. Author URI of the plugin
+#: um-recaptcha.php
+msgid "http://ultimatemember.com/"
+msgstr ""
+
+#: includes/admin/class-init.php:111
+msgid "Google reCAPTCHA is active on your site. However you need to fill in both your <strong>site key and secret key</strong> to start protecting your site against spam."
+msgstr ""
+
+#: includes/admin/class-init.php:114
+msgid "I already have the keys"
+msgstr ""
+
+#: includes/admin/class-init.php:115
+msgid "Generate your site and secret key"
+msgstr ""
+
+#: includes/admin/class-init.php:142
+#: includes/admin/class-init.php:160
+#: includes/admin/class-init.php:176
+msgid "Google reCAPTCHA"
+msgstr ""
+
+#: includes/admin/class-init.php:181
+msgid "Enable Google reCAPTCHA"
+msgstr ""
+
+#: includes/admin/class-init.php:182
+msgid "Turn on or off your Google reCAPTCHA on your site registration and login forms by default."
+msgstr ""
+
+#: includes/admin/class-init.php:187
+msgid "reCAPTCHA type"
+msgstr ""
+
+#: includes/admin/class-init.php:188
+msgid "Choose the type of reCAPTCHA for this site key. A site key only works with a single reCAPTCHA site type."
+msgstr ""
+
+#: includes/admin/class-init.php:190
+msgid "reCAPTCHA v2"
+msgstr ""
+
+#: includes/admin/class-init.php:191
+msgid "reCAPTCHA v3"
+msgstr ""
+
+#: includes/admin/class-init.php:194
+msgid "See <a href=\"https://developers.google.com/recaptcha/docs/versions\" target=\"_blank\">Site Types</a> for more details."
+msgstr ""
+
+#: includes/admin/class-init.php:201
+#: includes/admin/class-init.php:226
+msgid "Site Key"
+msgstr ""
+
+#: includes/admin/class-init.php:202
+#: includes/admin/class-init.php:227
+msgid "You can register your site and generate a site key via <a href=\"https://www.google.com/recaptcha/\">Google reCAPTCHA</a>"
+msgstr ""
+
+#: includes/admin/class-init.php:209
+#: includes/admin/class-init.php:234
+msgid "Secret Key"
+msgstr ""
+
+#: includes/admin/class-init.php:210
+#: includes/admin/class-init.php:235
+msgid "Keep this a secret. You can get your secret key via <a href=\"https://www.google.com/recaptcha/\">Google reCAPTCHA</a>"
+msgstr ""
+
+#: includes/admin/class-init.php:217
+msgid "reCAPTCHA Score"
+msgstr ""
+
+#: includes/admin/class-init.php:218
+msgid "Consider answers with a score >= to the specified as safe. Set the score in the 0 to 1 range. E.g. 0.5"
+msgstr ""
+
+#: includes/admin/class-init.php:242
+msgid "Type"
+msgstr ""
+
+#: includes/admin/class-init.php:243
+#: includes/admin/class-init.php:335
+msgid "The type of reCAPTCHA to serve."
+msgstr ""
+
+#: includes/admin/class-init.php:245
+msgid "Audio"
+msgstr ""
+
+#: includes/admin/class-init.php:246
+msgid "Image"
+msgstr ""
+
+#: includes/admin/class-init.php:254
+msgid "Language"
+msgstr ""
+
+#: includes/admin/class-init.php:255
+msgid "Select the language to be used in your reCAPTCHA."
+msgstr ""
+
+#: includes/admin/class-init.php:257
+msgid "Arabic"
+msgstr ""
+
+#: includes/admin/class-init.php:258
+msgid "Afrikaans"
+msgstr ""
+
+#: includes/admin/class-init.php:259
+msgid "Amharic"
+msgstr ""
+
+#: includes/admin/class-init.php:260
+msgid "Armenian"
+msgstr ""
+
+#: includes/admin/class-init.php:261
+msgid "Azerbaijani"
+msgstr ""
+
+#: includes/admin/class-init.php:262
+msgid "Basque"
+msgstr ""
+
+#: includes/admin/class-init.php:263
+msgid "Bengali"
+msgstr ""
+
+#: includes/admin/class-init.php:264
+msgid "Bulgarian"
+msgstr ""
+
+#: includes/admin/class-init.php:265
+msgid "Catalan"
+msgstr ""
+
+#: includes/admin/class-init.php:266
+msgid "Chinese (Hong Kong)"
+msgstr ""
+
+#: includes/admin/class-init.php:267
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: includes/admin/class-init.php:268
+msgid "Chinese (Traditional)"
+msgstr ""
+
+#: includes/admin/class-init.php:269
+msgid "Croatian"
+msgstr ""
+
+#: includes/admin/class-init.php:270
+msgid "Czech"
+msgstr ""
+
+#: includes/admin/class-init.php:271
+msgid "Danish"
+msgstr ""
+
+#: includes/admin/class-init.php:272
+msgid "Dutch"
+msgstr ""
+
+#: includes/admin/class-init.php:273
+msgid "English (UK)"
+msgstr ""
+
+#: includes/admin/class-init.php:274
+msgid "English (US)"
+msgstr ""
+
+#: includes/admin/class-init.php:275
+msgid "Estonian"
+msgstr ""
+
+#: includes/admin/class-init.php:276
+msgid "Filipino"
+msgstr ""
+
+#: includes/admin/class-init.php:277
+msgid "Finnish"
+msgstr ""
+
+#: includes/admin/class-init.php:278
+msgid "French"
+msgstr ""
+
+#: includes/admin/class-init.php:279
+msgid "French (Canadian)"
+msgstr ""
+
+#: includes/admin/class-init.php:280
+msgid "Galician"
+msgstr ""
+
+#: includes/admin/class-init.php:281
+msgid "Kartuli"
+msgstr ""
+
+#: includes/admin/class-init.php:282
+msgid "German"
+msgstr ""
+
+#: includes/admin/class-init.php:283
+msgid "German (Austria)"
+msgstr ""
+
+#: includes/admin/class-init.php:284
+msgid "German (Switzerland)"
+msgstr ""
+
+#: includes/admin/class-init.php:285
+msgid "Greek"
+msgstr ""
+
+#: includes/admin/class-init.php:286
+msgid "Gujarati"
+msgstr ""
+
+#: includes/admin/class-init.php:287
+msgid "Hebrew"
+msgstr ""
+
+#: includes/admin/class-init.php:288
+msgid "Hindi"
+msgstr ""
+
+#: includes/admin/class-init.php:289
+msgid "Hungarain"
+msgstr ""
+
+#: includes/admin/class-init.php:290
+msgid "Icelandic"
+msgstr ""
+
+#: includes/admin/class-init.php:291
+msgid "Indonesian"
+msgstr ""
+
+#: includes/admin/class-init.php:292
+msgid "Italian"
+msgstr ""
+
+#: includes/admin/class-init.php:293
+msgid "Japanese"
+msgstr ""
+
+#: includes/admin/class-init.php:294
+msgid "Kannada"
+msgstr ""
+
+#: includes/admin/class-init.php:295
+msgid "Korean"
+msgstr ""
+
+#: includes/admin/class-init.php:296
+msgid "Laothian"
+msgstr ""
+
+#: includes/admin/class-init.php:297
+msgid "Latvian"
+msgstr ""
+
+#: includes/admin/class-init.php:298
+msgid "Lithuanian"
+msgstr ""
+
+#: includes/admin/class-init.php:299
+msgid "Malay"
+msgstr ""
+
+#: includes/admin/class-init.php:300
+msgid "Malayalam"
+msgstr ""
+
+#: includes/admin/class-init.php:301
+msgid "Marathi"
+msgstr ""
+
+#: includes/admin/class-init.php:302
+msgid "Mongolian"
+msgstr ""
+
+#: includes/admin/class-init.php:303
+msgid "Norwegian"
+msgstr ""
+
+#: includes/admin/class-init.php:304
+msgid "Persian"
+msgstr ""
+
+#: includes/admin/class-init.php:305
+msgid "Polish"
+msgstr ""
+
+#: includes/admin/class-init.php:306
+msgid "Portuguese"
+msgstr ""
+
+#: includes/admin/class-init.php:307
+msgid "Portuguese (Brazil)"
+msgstr ""
+
+#: includes/admin/class-init.php:308
+msgid "Portuguese (Portugal)"
+msgstr ""
+
+#: includes/admin/class-init.php:309
+msgid "Romanian"
+msgstr ""
+
+#: includes/admin/class-init.php:310
+msgid "Russian"
+msgstr ""
+
+#: includes/admin/class-init.php:311
+msgid "Serbian"
+msgstr ""
+
+#: includes/admin/class-init.php:312
+msgid "Sinhalese"
+msgstr ""
+
+#: includes/admin/class-init.php:313
+msgid "Slovak"
+msgstr ""
+
+#: includes/admin/class-init.php:314
+msgid "Slovenian"
+msgstr ""
+
+#: includes/admin/class-init.php:315
+msgid "Spanish"
+msgstr ""
+
+#: includes/admin/class-init.php:316
+msgid "Spanish (Latin America)"
+msgstr ""
+
+#: includes/admin/class-init.php:317
+msgid "Swahili"
+msgstr ""
+
+#: includes/admin/class-init.php:318
+msgid "Swedish"
+msgstr ""
+
+#: includes/admin/class-init.php:319
+msgid "Tamil"
+msgstr ""
+
+#: includes/admin/class-init.php:320
+msgid "Telugu"
+msgstr ""
+
+#: includes/admin/class-init.php:321
+msgid "Thai"
+msgstr ""
+
+#: includes/admin/class-init.php:322
+msgid "Turkish"
+msgstr ""
+
+#: includes/admin/class-init.php:323
+msgid "Ukrainian"
+msgstr ""
+
+#: includes/admin/class-init.php:324
+msgid "Urdu"
+msgstr ""
+
+#: includes/admin/class-init.php:325
+msgid "Vietnamese"
+msgstr ""
+
+#: includes/admin/class-init.php:326
+msgid "Zulu"
+msgstr ""
+
+#: includes/admin/class-init.php:334
+msgid "Size"
+msgstr ""
+
+#: includes/admin/class-init.php:337
+msgid "Compact"
+msgstr ""
+
+#: includes/admin/class-init.php:338
+msgid "Normal"
+msgstr ""
+
+#: includes/admin/class-init.php:339
+msgid "Invisible"
+msgstr ""
+
+#: includes/admin/class-init.php:347
+msgid "Theme"
+msgstr ""
+
+#: includes/admin/class-init.php:348
+msgid "Select a color theme of the widget."
+msgstr ""
+
+#: includes/admin/class-init.php:350
+msgid "Dark"
+msgstr ""
+
+#: includes/admin/class-init.php:351
+msgid "Light"
+msgstr ""
+
+#: includes/admin/class-init.php:360
+msgid "Enable Google reCAPTCHA on the UM password reset form"
+msgstr ""
+
+#: includes/admin/class-init.php:361
+msgid "Display the google Google reCAPTCHA on the Ultimate Member password reset form."
+msgstr ""
+
+#: includes/admin/class-init.php:367
+msgid "Enable Google reCAPTCHA on wp-login.php lost password form"
+msgstr ""
+
+#: includes/admin/class-init.php:368
+msgid "Display the google Google reCAPTCHA on wp-login.php lost password form."
+msgstr ""
+
+#: includes/admin/class-init.php:374
+msgid "Enable Google reCAPTCHA on wp-login.php form"
+msgstr ""
+
+#: includes/admin/class-init.php:375
+msgid "Display the google Google reCAPTCHA on wp-login.php form."
+msgstr ""
+
+#: includes/admin/class-init.php:381
+msgid "Enable Google reCAPTCHA on login form through `wp_login_form()`"
+msgstr ""
+
+#: includes/admin/class-init.php:382
+msgid "Display the google Google reCAPTCHA on login form through `wp_login_form()`."
+msgstr ""
+
+#: includes/admin/class-init.php:388
+msgid "Enable Google reCAPTCHA on wp-login.php registration form"
+msgstr ""
+
+#: includes/admin/class-init.php:389
+msgid "Display the google Google reCAPTCHA on wp-login.php registration form`."
+msgstr ""
+
+#: includes/admin/templates/form/login-recaptcha.php:16
+#: includes/admin/templates/form/register-recaptcha.php:16
+msgid "Google reCAPTCHA seems to be <strong style=\"color:#7ACF58;\">enabled</strong> by default."
+msgstr ""
+
+#: includes/admin/templates/form/login-recaptcha.php:18
+#: includes/admin/templates/form/register-recaptcha.php:18
+msgid "Google reCAPTCHA seems to be <strong style=\"color:#C74A4A;\">disabled</strong> by default."
+msgstr ""
+
+#: includes/admin/templates/form/login-recaptcha.php:26
+#: includes/admin/templates/form/register-recaptcha.php:26
+msgid "reCAPTCHA status on this form"
+msgstr ""
+
+#: includes/admin/templates/form/login-recaptcha.php:29
+#: includes/admin/templates/form/register-recaptcha.php:29
+msgid "No"
+msgstr ""
+
+#: includes/admin/templates/form/login-recaptcha.php:30
+#: includes/admin/templates/form/register-recaptcha.php:30
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/templates/form/login-recaptcha.php:40
+#: includes/admin/templates/form/register-recaptcha.php:40
+msgid "reCAPTCHA score"
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:230
+#: includes/core/actions/um-recaptcha-form.php:265
+#: includes/core/actions/um-recaptcha-form.php:375
+#: includes/core/actions/um-recaptcha-form.php:409
+#: includes/core/actions/um-recaptcha-form.php:468
+msgid "<strong>Error</strong>: Please confirm you are not a robot."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:242
+#: includes/core/actions/um-recaptcha-form.php:386
+#: includes/core/actions/um-recaptcha-form.php:471
+msgid "<strong>Error</strong>: It is very likely a bot."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:474
+#: includes/core/class-um-recaptcha.php:142
+msgid "<strong>Error</strong>: The secret parameter is missing."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:477
+#: includes/core/class-um-recaptcha.php:143
+msgid "<strong>Error</strong>: The secret parameter is invalid or malformed."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:480
+#: includes/core/class-um-recaptcha.php:144
+msgid "<strong>Error</strong>: The response parameter is missing."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:483
+#: includes/core/class-um-recaptcha.php:145
+msgid "<strong>Error</strong>: The response parameter is invalid or malformed."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:486
+#: includes/core/class-um-recaptcha.php:146
+msgid "<strong>Error</strong>: The request is invalid or malformed."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:489
+#: includes/core/class-um-recaptcha.php:147
+msgid "<strong>Error</strong>: The response is no longer valid: either is too old or has been used previously."
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:492
+#: includes/core/class-um-recaptcha.php:148
+msgid "<strong>Error</strong>: Undefined reCAPTCHA error."
+msgstr ""
+
+#. translators: %s: Google reCAPTCHA error code
+#: includes/core/actions/um-recaptcha-form.php:496
+msgid "<strong>Error</strong>: reCAPTCHA Code: %s"
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:795
+#: includes/core/actions/um-recaptcha-form.php:854
+msgid "Please confirm you are not a robot"
+msgstr ""
+
+#: includes/core/actions/um-recaptcha-form.php:806
+#: includes/core/actions/um-recaptcha-form.php:865
+msgid "reCAPTCHA: it is very likely a bot."
+msgstr ""
+
+#. translators: %s: Google reCAPTCHA error code
+#: includes/core/actions/um-recaptcha-form.php:812
+#: includes/core/actions/um-recaptcha-form.php:871
+msgid "Undefined error. Key: %s"
+msgstr ""
+
+#. translators: %s: Google reCAPTCHA extension name
+#: um-recaptcha.php:58
+#: um-recaptcha.php:82
+msgid "The <strong>%s</strong> extension requires the Ultimate Member plugin to be activated to work properly. You can download it <a href=\"https://wordpress.org/plugins/ultimate-member\">here</a>"
+msgstr ""

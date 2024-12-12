@@ -1,0 +1,432 @@
+/**
+ * Colors - Midnight
+ */
+ 
+.fsn-main-controls	{
+	background:#f5f5f5;
+}
+
+.fsn-main-controls .fsn-component-controls	{
+	border-left:1px solid #e5e5e5;
+}
+
+.fsn-helper	{
+	background:rgba(0, 0, 0, 0.3);
+	border-left:4px solid #fff;
+	border-right:4px solid #fff;
+}
+ 
+.ui-tooltip.fsn-tooltip {
+	background:#1e2022;
+	color:#fff;
+}
+
+.ui-tooltip.fsn-tooltip:after	{
+	border:5px solid #1e2022;
+	border-left-color:transparent;
+	border-right-color:transparent;
+	border-bottom-color:transparent;
+}
+ 
+/*Modals*/
+
+.modal-header {
+	background:#e14d43;
+	color:#fff;
+}
+
+#editColModal .modal-header	{
+	background:#363b3f;
+}
+#editTabsModal .modal-header,
+#editTabModal .modal-header	{
+	background:#69a8bb;
+}
+
+.modal-header .nav-tabs > li > a	{
+	color:#fff;
+}
+
+.modal-header .nav-tabs > li.active > a, .modal-header .nav-tabs > li.active > a:hover, .modal-header .nav-tabs > li.active > a:focus	{
+	color:#fff;
+	border-bottom:5px solid #fff;
+}
+
+.modal-header .close	{
+	color:#fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	background-color: #f5f5f5;
+}
+
+.nav-tabs > li > a.fsn-add-tab	{
+	color:#69a8bb;
+}
+ 
+/*Controls*/
+ 
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-dropdown,
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-dropdown,
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-dropdown,
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-dropdown,
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-dropdown,
+#load_template_modal .template-item .template-controls-dropdown	{
+	background:#26292c;
+}
+
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-dropdown:before,
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-dropdown:before,
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-dropdown:before,
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-dropdown:before,
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-dropdown:before,
+#load_template_modal .template-item .template-controls-dropdown:before	{
+	border:8px solid #26292c;
+	border-top-color:transparent;
+	border-left-color:transparent;
+	border-bottom-color:transparent;
+}
+
+#load_template_modal .template-item .template-controls-dropdown:before	{
+	border-left-color:#26292c;
+	border-right-color:transparent;
+}
+
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-dropdown hr,
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-dropdown hr,
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-dropdown hr,
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-dropdown hr,
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-dropdown hr,
+#load_template_modal .template-item .template-controls-dropdown hr	{
+	border-top-color:rgba(255, 255, 255, 0.1);
+}
+
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-dropdown > a,
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-dropdown > a,
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-dropdown > a,
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-dropdown > a,
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-dropdown > a,
+#load_template_modal .template-item .template-controls-dropdown > a	{
+	color:#c3c4c5;
+}
+
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-dropdown > a:hover,
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-dropdown > a:hover,
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-dropdown > a:hover,
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-dropdown > a:hover,
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-dropdown > a:hover,
+#load_template_modal .template-item .template-controls-dropdown > a:hover	{
+	color:#e14d43;
+}
+
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-toggle	{
+	background:#363b3f;
+	color:#fff;
+}
+
+.fsn-interface-grid .column-container > .column-header .column-controls .column-controls-toggle:hover, .fsn-interface-grid .column-container > .column-header .column-controls .column-controls-toggle.open	{
+	background:#2b2f32;
+}
+
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-toggle	{
+	background:#69a8bb;
+	color:#fff;
+}
+
+.fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-toggle:hover, .fsn-interface-grid .tabs-container > .tabs-header .tabs-controls .tabs-controls-toggle.open	{
+	background:#548696;
+}
+
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-toggle	{
+	background:#f5f5f5;
+	color:#666;
+}
+
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-toggle:hover,
+.fsn-interface-grid .tab-container > .tab-header .tab-controls .tab-controls-toggle.open	{
+	background:#c4c4c4;
+}
+
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-toggle	{
+	background:#e14d43;
+}
+
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-toggle:hover,
+.fsn-interface-grid .fsn-element > .element-controls .element-controls-toggle.open	{
+	background:#b43e36;
+}
+
+#load_template_modal .template-item .template-controls-toggle:hover, #load_template_modal .template-item .template-controls-toggle.open	{
+	background:rgba(0, 0, 0, 0.2);
+}
+
+.control-icon	{
+	color:#fff;
+}
+
+.control-icon:hover	{
+	color:#fff;
+}
+
+.tab-header .control-icon, .tab-header .control-icon:hover	{
+	color:#666;
+}
+
+.column-header .control-icon	{
+	background:#363b3f;
+}
+
+.column-header .control-icon:hover	{
+	background:#2b2f32;
+}
+
+.element-controls .control-icon	{
+	background:#e14d43;
+}
+
+.element-controls .control-icon:hover	{
+	background:#b43e36;
+}
+
+.tabs-controls .control-icon	{
+	background:#69a8bb;
+}
+
+.tabs-controls .control-icon:hover	{
+	background:#548696;
+}
+
+.tab-controls .control-icon	{
+	background:#f5f5f5;
+}
+
+.tab-controls .control-icon:hover	{
+	background:#c4c4c4;
+}
+
+/*Rows*/
+
+.fsn-interface-grid .row-container > .row-header	{
+	background:#25282b;
+}
+
+.fsn-interface-grid .row-container	{
+	background:#fff;
+}
+
+#editRowModal .modal-header,
+#load_template_modal .modal-header,
+#save_template_modal .modal-header	{
+	background:#25282b;
+}
+
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-toggle	{
+	background:#25282b;
+	color:#fff;
+}
+
+.fsn-interface-grid .row-container > .row-header .row-controls .row-controls-toggle:hover, .fsn-interface-grid .row-container > .row-header .row-controls .row-controls-toggle.open	{
+	background:#1e2022;
+}
+
+.row-header .control-icon	{
+	top:34px;
+	left:0;
+	background:#25282b;
+}
+
+.row-header .control-icon:hover	{
+	background:#1e2022;
+}
+
+.fsn-interface-grid .row-container .fsn-add-row	{
+	background:#25282b;
+	color:#fff;
+}
+
+.fsn-interface-grid .row-container .fsn-add-row:hover	{
+	background:#1e2022;
+}
+
+.fsn-interface-grid .row-container > .row-wrapper	{
+	background:#fff;
+	border:1px solid #e5e5e5;
+}
+
+.fsn-interface-grid > .row-sort-placeholder	{
+	background:rgba(0, 0, 0, 0.05);
+}
+
+/*Columns*/
+
+.fsn-interface-grid .column-container	{
+	background:#f1f1f1;
+}
+
+.fsn-interface-grid [class*="col-"] .ui-resizable-handle:before	{
+	background:rgba(255, 255, 255, 0.2);
+}
+
+.fsn-interface-grid [class*="col-"] .ui-resizable-handle:after	{
+	background:rgba(255, 255, 255, 0.2);
+}
+
+.fsn-interface-grid .column-container > .column-header	{
+	background:#363b3f;
+}
+
+.fsn-interface-grid .column-container > .column-header h3	{
+	color:#fff;
+    opacity:0.8;
+}
+
+.fsn-interface-grid .fsn-add-element	{
+	background:#f9dbd9;
+	color:#e14d43;
+}
+
+.fsn-interface-grid .col-xs-1,
+.fsn-interface-grid .col-sm-1,
+.fsn-interface-grid .col-md-1,
+.fsn-interface-grid .col-lg-1,
+.fsn-interface-grid .col-xs-2,
+.fsn-interface-grid .col-sm-2,
+.fsn-interface-grid .col-md-2,
+.fsn-interface-grid .col-lg-2,
+.fsn-interface-grid .col-xs-3,
+.fsn-interface-grid .col-sm-3,
+.fsn-interface-grid .col-md-3,
+.fsn-interface-grid .col-lg-3,
+.fsn-interface-grid .col-xs-4,
+.fsn-interface-grid .col-sm-4,
+.fsn-interface-grid .col-md-4,
+.fsn-interface-grid .col-lg-4,
+.fsn-interface-grid .col-xs-5,
+.fsn-interface-grid .col-sm-5,
+.fsn-interface-grid .col-md-5,
+.fsn-interface-grid .col-lg-5,
+.fsn-interface-grid .col-xs-6,
+.fsn-interface-grid .col-sm-6,
+.fsn-interface-grid .col-md-6,
+.fsn-interface-grid .col-lg-6,
+.fsn-interface-grid .col-xs-7,
+.fsn-interface-grid .col-sm-7,
+.fsn-interface-grid .col-md-7,
+.fsn-interface-grid .col-lg-7,
+.fsn-interface-grid .col-xs-8,
+.fsn-interface-grid .col-sm-8,
+.fsn-interface-grid .col-md-8,
+.fsn-interface-grid .col-lg-8,
+.fsn-interface-grid .col-xs-9,
+.fsn-interface-grid .col-sm-9,
+.fsn-interface-grid .col-md-9,
+.fsn-interface-grid .col-lg-9,
+.fsn-interface-grid .col-xs-10,
+.fsn-interface-grid .col-sm-10,
+.fsn-interface-grid .col-md-10,
+.fsn-interface-grid .col-lg-10,
+.fsn-interface-grid .col-xs-11,
+.fsn-interface-grid .col-sm-11,
+.fsn-interface-grid .col-md-11,
+.fsn-interface-grid .col-lg-11,
+.fsn-interface-grid .col-xs-12,
+.fsn-interface-grid .col-sm-12,
+.fsn-interface-grid .col-md-12,
+.fsn-interface-grid .col-lg-12 {  
+  color:#fff;
+}
+
+.fsn-interface-grid .fsn-add-col	{
+	background:#f1f1f1;
+}
+
+.fsn-interface-grid .fsn-add-col .material-icons	{
+	color:#363b3f;
+}
+
+/*Tabs*/
+
+.fsn-interface-grid .tabs-container	{
+	background:#fff;
+}
+
+.fsn-interface-grid .tabs-container > .tabs-header	{
+	background:#69a8bb;
+}
+
+.fsn-interface-grid .tabs-container > .tabs-header h3	{
+	color:#fff;
+	opacity:0.8;
+}
+
+/*Tab*/
+
+.fsn-interface-grid .tab-container > .tab-header	{
+	background:#f5f5f5;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	color:#444;
+}
+
+/*Elements*/
+
+.fsn-element	{
+	background:#e14d43;
+}
+
+.fsn-element .element-label	{
+	opacity:0.8;
+}
+
+.fsn-interface-grid .fsn-text .element-text-holder	{	
+	background:#f0f0f0;
+	color:#444;
+}
+
+/*Add Element Modal*/
+
+#addElementModal .element-item	{
+	background:#f5f5f5;
+	color:#363b3f;
+}
+
+#addElementModal .element-item:focus, #addElementModal .element-item:hover	{
+	background:#e14d43;
+	color:#fff;
+}
+
+/*Template Modals*/
+
+#save_template_modal .notice	{
+	background:#f5f5f5;
+}
+
+#load_template_modal .template-item	{
+	background:#f5f5f5;
+}
+
+#load_template_modal .template-item:focus, #load_template_modal .template-item:hover	{
+	background:#e14d43;
+	color:#fff;
+}
+
+/*Components*/
+
+#componentsModal .components-modal-close {
+	color:#666;
+}
+
+#components-modal-inner	{
+	background:#fff;
+}
+
+#component_title	{
+	background-color: #fff;
+}
+
+#componentsModal .notice {
+	background:#f5f5f5;
+}
